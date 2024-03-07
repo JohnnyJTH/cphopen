@@ -1,7 +1,9 @@
-<script>
+<script lang="ts">
   import { page } from '$app/stores';
-  import { CalendarDays } from 'lucide-svelte';
+  import { CalendarDays, Menu } from 'lucide-svelte';
   import { Tabs } from './ui/navigation';
+  import { Drawer } from 'vaul-svelte';
+  import { cn } from '$lib/utils';
 
   const PLAYER_LINKS = [
     { href: '/player', label: 'Home' },
@@ -30,7 +32,15 @@
   ];
 
   const NAV_ITEMS = PLAYER_LINKS.filter((link) => !link.items);
-  const SUBNAVS = PLAYER_LINKS.filter((link) => link.items);
+  // const SUBNAVS = PLAYER_LINKS.filter((link) => link.items);
+  // derive subnavs but type safe
+  const SUBNAVS = PLAYER_LINKS.filter((link) => link.items).map((link) => ({
+    label: link.label,
+    id: link.id ?? 0,
+    items: link.items ?? []
+  }));
+
+  let drawerClose: HTMLButtonElement;
 </script>
 
 <header
@@ -49,20 +59,73 @@
       </a>
     </div>
     {#if $page.url.pathname !== '/'}
-      <div class="flex justify-end gap-2">
-        {#each NAV_ITEMS as item}
-          <a
-            href={item.href}
-            class={`flex items-center gap-1 rounded-md px-3 py-1.5 transition-colors ${
-              $page.url.pathname === item.href
-                ? 'text-primary underline underline-offset-4'
-                : 'text-foreground'
-            }`}
-          >
-            {item.label}
-          </a>
-        {/each}
-        <Tabs tabs={SUBNAVS} />
+      <div class="gap-2 flexjustify-end ">
+        <div class="hidden lg:flex">
+          {#each NAV_ITEMS as item}
+            <a
+              href={item.href}
+              class={`flex items-center gap-1 rounded-md px-3 py-1.5 transition-colors ${
+                $page.url.pathname === item.href
+                  ? 'text-primary underline underline-offset-4'
+                  : 'text-foreground hover:text-primary'
+              }`}
+            >
+              {item.label}
+            </a>
+          {/each}
+          <Tabs tabs={SUBNAVS} />
+        </div>
+        <div class="flex lg:hidden">
+          <Drawer.Root>
+            <Drawer.Trigger>
+              <Menu />
+            </Drawer.Trigger>
+            <Drawer.Portal>
+              <Drawer.Close bind:el={drawerClose} />
+              <Drawer.Overlay class="fixed inset-0 bg-black/40" />
+              <Drawer.Content
+                class="fixed bottom-0 left-0 right-0 mt-24 flex h-full max-h-[85%] flex-col rounded-t-[10px] bg-gray-100"
+              >
+                <div class="flex-1 rounded-t-[10px] bg-black p-4">
+                  <div class="mx-auto mb-8 h-1.5 w-12 flex-shrink-0 rounded-full bg-gray-700" />
+                  <div class="flex flex-col gap-8 p-8">
+                    {#each NAV_ITEMS as item}
+                      <a
+                        on:click={() => drawerClose.click()}
+                        href={item.href}
+                        class={cn(
+                          'font-mono text-5xl font-bold uppercase',
+                          $page.url.pathname === item.href &&
+                            'text-primary underline underline-offset-8'
+                        )}>{item.label}</a
+                      >
+                    {/each}
+                    {#each SUBNAVS as subnav}
+                      <span class="font-mono text-4xl capitalize">{subnav.label}</span>
+                      <div class="grid grid-cols-3 gap-3 p-1">
+                        {#each subnav.items as item}
+                          <a
+                            on:click={() => drawerClose.click()}
+                            href={item.href}
+                            class={cn(
+                              'block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent/60 hover:text-primary',
+                              $page.url.pathname === item.href && 'bg-accent/60 text-primary'
+                            )}
+                          >
+                            <div class="text-2xl font-bold leading-none">{item.label}</div>
+                            <p class="text-lg leading-snug line-clamp-2 text-muted-foreground">
+                              {item.description}
+                            </p>
+                          </a>
+                        {/each}
+                      </div>
+                    {/each}
+                  </div>
+                </div>
+              </Drawer.Content>
+            </Drawer.Portal>
+          </Drawer.Root>
+        </div>
       </div>
     {:else}
       <!-- Hovedmenuen er lidt anderledes på startsiden -->
