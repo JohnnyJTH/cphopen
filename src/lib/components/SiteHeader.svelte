@@ -54,7 +54,7 @@
         <img
           src="/images/edgpt-co.png"
           class="w-12 h-12"
-          alt="European Pro Tour: Copenhagen Open"
+          alt="DGPT Europe - Copenhagen Open 2024"
         />
       </a>
     </div>
@@ -133,13 +133,13 @@
     {:else}
       <!-- Hovedmenuen er lidt anderledes på startsiden -->
       <div class="justify-center hidden md:flex md:flex-1">
-        <h1 class="text-2xl font-bold text-primary">European Pro Tour: Copenhagen Open</h1>
+        <h1 class="text-2xl font-bold text-primary">DGPT Europe - Copenhagen Open 2024</h1>
       </div>
       <div class="flex justify-end max-md:flex max-md:flex-col">
-        <h1 class="text-xl font-bold text-primary sm:text-2xl md:hidden">DGPT: Copenhagen Open</h1>
+        <h1 class="text-xl font-bold text-primary sm:text-2xl md:hidden">DGPT Europe - Copenhagen Open 2024</h1>
         <div class="flex gap-2 max-md:justify-end">
           <CalendarDays />
-          <span class="text-sm md:text-md sm:text-base">May 10-12</span>
+          <span class="text-sm md:text-md sm:text-base">May 10-12, 2024</span>
         </div>
       </div>
     {/if}

@@ -5,7 +5,7 @@
 
 <div
   id="hero"
-  style="background-image: url(images/EO22_FinalRound.jpg)"
+  style="background-image: url(images/EPT_CopenhagenOpen_6474.jpg)"
   class="-mb-16 -mt-16 h-screen w-screen bg-[''] bg-cover bg-center bg-no-repeat"
 >
   <div class="relative flex flex-col h-full px-8 py-24 text-center md:px-16 md:py-32">

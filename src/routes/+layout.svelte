@@ -3,7 +3,7 @@
   import { SiteFooter, SiteHeader, TailwindIndicator } from '$lib/components';
   import '../app.pcss';
 
-  let title = 'Copenhagen Open 2024';
+  let title = 'DGPT Europe - Copenhagen Open 2024';
 </script>
 
 <svelte:head>
