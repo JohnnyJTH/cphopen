@@ -3,6 +3,10 @@ import { twMerge } from "tailwind-merge";
 import { cubicOut } from "svelte/easing";
 import type { TransitionConfig } from "svelte/transition";
 
+export const includesAny = (str: string, arr: string[]) => {
+    return arr.some((item) => str.includes(item));
+}
+
 export function cn(...inputs: ClassValue[]) {
     return twMerge(clsx(inputs));
 }

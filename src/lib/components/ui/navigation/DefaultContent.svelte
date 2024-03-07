@@ -1,45 +1,24 @@
 <script lang="ts">
-  import { ArrowRight } from 'lucide-svelte';
-
-  export let items;
+  import { page } from '$app/stores';
+  import { cn } from '$lib/utils';
+  export let items: { href: string; label: string; description: string }[];
 </script>
 
 <div>
-  <div class="flex gap-4">
-    <div>
-      <h3 class="mb-2 text-sm font-medium">Startup</h3>
-
-      <a href="#" class="block mb-1 text-sm text-neutral-400"> Bookkeeping </a>
-
-      <a href="#" class="block text-sm text-neutral-400"> Invoicing </a>
-    </div>
-
-    <div>
-      <h3 class="mb-2 text-sm font-medium">Scaleup</h3>
-
-      <a href="#" class="block mb-1 text-sm text-neutral-400"> Live Coaching </a>
-
-      <a href="#" class="block mb-1 text-sm text-neutral-400"> Reviews </a>
-
-      <a href="#" class="block text-sm text-neutral-400"> Tax/VAT </a>
-    </div>
-
-    <div>
-      <h3 class="mb-2 text-sm font-medium">Enterprise</h3>
-
-      <a href="#" class="block mb-1 text-sm text-neutral-400"> White glove </a>
-
-      <a href="#" class="block mb-1 text-sm text-neutral-400"> SOX Compliance </a>
-
-      <a href="#" class="block text-sm text-neutral-400"> Staffing </a>
-
-      <a href="#" class="block text-sm text-neutral-400"> More </a>
-    </div>
-  </div>
-
-  <button class="flex items-center gap-1 mt-4 ml-auto text-sm text-indigo-300">
-    <span>View more</span>
-
-    <ArrowRight />
-  </button>
+  <ul class="grid w-[400px] gap-3 p-1 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
+    {#each items as item}
+      <li>
+        <a
+          href={item.href}
+          class={cn(
+            'block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent/60 hover:text-primary',
+            $page.url.pathname === item.href && 'bg-accent/60 text-primary'
+          )}
+        >
+          <div class="text-sm font-bold leading-none">{item.label}</div>
+          <p class="text-sm leading-snug line-clamp-2 text-muted-foreground">{item.description}</p>
+        </a>
+      </li>
+    {/each}
+  </ul>
 </div>

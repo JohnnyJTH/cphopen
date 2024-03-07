@@ -1,20 +1,35 @@
 <script lang="ts">
   import { ChevronDown } from 'lucide-svelte';
   import { handleSetSelected, selected } from '.';
+  import { includesAny } from '$lib/utils';
+  import { page } from '$app/stores';
 
-  export let tab: number;
+  export let tab: {
+    id: number;
+    label: string;
+    items: { href: string; label: string; description: string }[];
+  };
 </script>
 
 <button
-  id={`tab-${tab}`}
-  on:mouseenter={() => handleSetSelected(tab)}
-  on:click={() => handleSetSelected(tab)}
-  class={`flex items-center gap-1 rounded-full px-3 py-1.5 text-sm transition-colors ${
-    $selected === tab ? ' bg-neutral-800 text-neutral-100' : 'text-neutral-400'
+  id={`tab-${tab.id}`}
+  on:mouseenter={() => handleSetSelected(tab.id)}
+  on:click={() => handleSetSelected(tab.id)}
+  class={`flex items-center gap-1 rounded-md px-3 py-1.5 transition-colors ${
+    includesAny(
+      $page.url.pathname,
+      tab.items.map((item) => item.href)
+    )
+      ? 'text-primary underline underline-offset-4'
+      : $selected === tab.id
+        ? 'text-primary'
+        : 'text-foreground'
   }`}
 >
   <span>
     <slot />
   </span>
-  <ChevronDown class={`transition-transform ${$selected === tab ? 'rotate-180' : ''}`} />
+  <ChevronDown
+    class={`scale-75 transition-transform ${$selected === tab.id ? 'rotate-180' : ''}`}
+  />
 </button>

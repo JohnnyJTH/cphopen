@@ -1,3 +1,3 @@
-<div class="w-full h-full mx-auto page-container">
+<div class="w-full h-full page-container">
   <slot />
 </div>

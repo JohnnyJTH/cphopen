@@ -5,7 +5,8 @@
 
 <div
   id="hero"
-  class="-mb-16 -mt-16 h-screen w-screen bg-[url('images/EO22_FinalRound.jpg')] bg-cover bg-center bg-no-repeat"
+  style="background-image: url(images/EO22_FinalRound.jpg)"
+  class="-mb-16 -mt-16 h-screen w-screen bg-[''] bg-cover bg-center bg-no-repeat"
 >
   <div class="relative flex flex-col h-full px-8 py-24 text-center md:px-16 md:py-32">
     <div class="flex flex-col flex-auto gap-8 lg:flex-row">

@@ -25,7 +25,7 @@
   let:motion
 >
   <div
-    class="z-50 absolute left-0 top-[calc(100%_+_64px)] w-96 rounded-lg border border-neutral-600 bg-gradient-to-b from-neutral-900 via-neutral-900 to-neutral-800 p-4"
+    class="z-50 absolute -left-[10vh] top-[calc(100%_+_10px)] rounded-lg border border-neutral-600 bg-background p-4"
     use:motion
   >
     <Bridge />

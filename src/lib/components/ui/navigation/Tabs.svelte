@@ -1,6 +1,5 @@
 <script lang="ts">
   import { Content, Tab, handleSetSelected, selected } from '.';
-  import { AnimatePresence } from 'svelte-motion';
 
   export let tabs: {
     id: number;
@@ -15,11 +14,9 @@
   on:mouseleave={() => handleSetSelected(null)}
 >
   {#each tabs as tab}
-    <Tab tab={tab.id}>{tab.label}</Tab>
+    <Tab tab={tab}>{tab.label}</Tab>
   {/each}
-  <AnimatePresence>
-    {#if $selected}
-      <Content {tabs} />
-    {/if}
-  </AnimatePresence>
+  {#if $selected}
+    <Content {tabs} />
+  {/if}
 </div>
