@@ -14,6 +14,7 @@ export const handleSetSelected = (val: number | null) => {
     selected.set(val);
 };
 
+export { default as Arrow } from "./Arrow.svelte";
 export { default as Bridge } from "./Bridge.svelte";
 export { default as Content } from "./Content.svelte";
 export { default as DefaultContent } from "./DefaultContent.svelte";

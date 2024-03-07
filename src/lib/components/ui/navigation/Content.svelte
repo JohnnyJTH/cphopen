@@ -1,6 +1,6 @@
 <script lang="ts">
   import { Motion } from 'svelte-motion';
-  import { Bridge, DefaultContent, dir, selected } from '.';
+  import { Arrow, Bridge, DefaultContent, dir, selected } from '.';
 
   export let tabs: {
     id: number;
@@ -25,10 +25,12 @@
   let:motion
 >
   <div
-    class="z-50 absolute -left-[10vh] top-[calc(100%_+_10px)] rounded-lg border border-neutral-600 bg-background p-4"
+    id="tab-content"
+    class="absolute -left-[10vh] top-[calc(100%_+_10px)] z-50 rounded-lg border border-accent bg-background p-4"
     use:motion
   >
     <Bridge />
+    <Arrow />
     {#each tabs as tab}
       <div class="overflow-hidden">
         {#if $selected === tab.id}
