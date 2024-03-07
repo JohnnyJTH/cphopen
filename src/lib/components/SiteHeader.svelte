@@ -59,7 +59,7 @@
       </a>
     </div>
     {#if $page.url.pathname !== '/'}
-      <div class="gap-2 flexjustify-end ">
+      <div class="gap-2 flexjustify-end">
         <div class="hidden lg:flex">
           {#each NAV_ITEMS as item}
             <a
@@ -84,40 +84,43 @@
               <Drawer.Close bind:el={drawerClose} />
               <Drawer.Overlay class="fixed inset-0 bg-black/40" />
               <Drawer.Content
-                class="fixed bottom-0 left-0 right-0 mt-24 flex h-full max-h-[85%] flex-col rounded-t-[10px] bg-gray-100"
+                class="fixed bottom-0 left-0 right-0 mt-24 flex h-full max-h-[90%] flex-col rounded-t-[10px] bg-gray-100"
               >
                 <div class="flex-1 rounded-t-[10px] bg-black p-4">
-                  <div class="mx-auto mb-8 h-1.5 w-12 flex-shrink-0 rounded-full bg-gray-700" />
-                  <div class="flex flex-col gap-8 p-8">
+                  <div class="mx-auto sm:mb-8 h-1.5 w-12 flex-shrink-0 rounded-full bg-gray-700" />
+                  <div class="flex flex-col gap-4 p-8 sm:gap-8">
                     {#each NAV_ITEMS as item}
                       <a
                         on:click={() => drawerClose.click()}
                         href={item.href}
                         class={cn(
-                          'font-mono text-5xl font-bold uppercase',
+                          'font-mono text-3xl font-bold uppercase sm:text-5xl',
                           $page.url.pathname === item.href &&
                             'text-primary underline underline-offset-8'
                         )}>{item.label}</a
                       >
                     {/each}
                     {#each SUBNAVS as subnav}
-                      <span class="font-mono text-4xl capitalize">{subnav.label}</span>
-                      <div class="grid grid-cols-3 gap-3 p-1">
-                        {#each subnav.items as item}
-                          <a
-                            on:click={() => drawerClose.click()}
-                            href={item.href}
-                            class={cn(
-                              'block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent/60 hover:text-primary',
-                              $page.url.pathname === item.href && 'bg-accent/60 text-primary'
-                            )}
-                          >
-                            <div class="text-2xl font-bold leading-none">{item.label}</div>
-                            <p class="text-lg leading-snug line-clamp-2 text-muted-foreground">
-                              {item.description}
-                            </p>
-                          </a>
-                        {/each}
+                      <div>
+                        <span class="font-mono text-2xl capitalize sm:text-4xl">{subnav.label}</span
+                        >
+                        <div class="grid grid-cols-2 gap-3 p-1 sm:grid-cols-3">
+                          {#each subnav.items as item}
+                            <a
+                              on:click={() => drawerClose.click()}
+                              href={item.href}
+                              class={cn(
+                                'block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent/60 hover:text-primary',
+                                $page.url.pathname === item.href && 'bg-accent/60 text-primary'
+                              )}
+                            >
+                              <div class="font-bold leading-none text-">{item.label}</div>
+                              <p class="text-sm leading-snug line-clamp-2 text-muted-foreground">
+                                {item.description}
+                              </p>
+                            </a>
+                          {/each}
+                        </div>
                       </div>
                     {/each}
                   </div>
