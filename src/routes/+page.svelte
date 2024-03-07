@@ -1,17 +1,22 @@
 <script lang="ts">
   import { Button } from '$lib/components/ui/button';
+  import { User, Users } from 'lucide-svelte';
 </script>
 
 <div
   id="hero"
-  class="h-screen w-screen bg-[url('images/EO22_FinalRound.jpg')] bg-cover bg-center bg-no-repeat"
+  class="-mb-16 -mt-16 h-screen w-screen bg-[url('images/EO22_FinalRound.jpg')] bg-cover bg-center bg-no-repeat"
 >
-  <div class="relative h-full p-16 pt-8 text-center">
-    <h1 class="text-6xl font-bold text-primary lg:text-8xl">Copenhagen Open 2024</h1>
-    <p class="mt-2 text-xl text-background lg:text-3xl">Placeholder...</p>
-    <div class="flex flex-col h-[80vh] gap-8 mt-8 lg:flex-row">
-      <Button variant="huge" size="huge">Player</Button>
-      <Button variant="huge" size="huge">Tilskuer</Button>
+  <div class="relative flex flex-col h-full px-8 py-24 text-center md:px-16 md:py-32">
+    <div class="flex flex-col flex-auto gap-8 lg:flex-row">
+      <Button href="/publikum" variant="huge" size="huge">
+        <Users strokeWidth="3" class="w-12 h-12 text-primary lg:h-24 lg:w-24" />
+        <h2 class="text-3xl lg:text-5xl text-outline text-primary">For publikum</h2>
+      </Button>
+      <Button href="/player" variant="huge" size="huge">
+        <User strokeWidth="3" class="w-12 h-12 text-primary lg:h-24 lg:w-24" />
+        <h2 class="text-3xl lg:text-5xl text-outline text-primary">For players</h2>
+      </Button>
     </div>
   </div>
 </div>

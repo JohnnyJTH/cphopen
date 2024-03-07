@@ -12,15 +12,16 @@ const buttonVariants = tv({
 				"border border-input bg-background hover:bg-accent hover:text-accent-foreground",
 			secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/80",
 			ghost: "hover:bg-accent hover:text-accent-foreground",
-			link: "text-primary underline-offset-4 hover:underline",
-			huge: "bg-gray-400/40 text-gray-900 hover:bg-gray-400/50 border border-gray-500",
+			link: "font-bold text-foreground underline-offset-4 hover:underline",
+			"link-active": "font-bold text-primary underline-offset-4 underline",
+			huge: "bg-background/50 text-black hover:bg-background/60 border border-2 border-background flex flex-col",
 		},
 		size: {
 			default: "h-10 px-4 py-2",
 			sm: "h-9 rounded-md px-3",
 			lg: "h-11 rounded-md px-8",
 			icon: "h-10 w-10",
-			huge: "h-full w-full !rounded-lg px-8 py-4 text-lg font-bold"
+			huge: "h-full w-full text-lg font-bold"
 		},
 	},
 	defaultVariants: {
