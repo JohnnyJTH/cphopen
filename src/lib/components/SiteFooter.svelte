@@ -22,7 +22,7 @@
           title="Facebook"
           target="_blank"
           href="https://www.facebook.com/cphopen.dk"
-          variant="link"
+          variant="link-active"
         >
           <Facebook />
         </Button>
@@ -32,7 +32,7 @@
           title="Instagram"
           target="_blank"
           href="https://www.instagram.com/copenhagenopendiscgolf/"
-          variant="link"
+          variant="link-active"
         >
           <Instagram />
         </Button>
@@ -42,7 +42,7 @@
           title="DGPT"
           target="_blank"
           href="https://www.dgpt.com/event/2024-copenhagen-open/"
-          variant="link"
+          variant="link-active"
         >
           <TicketPercent />
         </Button>
