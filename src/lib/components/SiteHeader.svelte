@@ -136,7 +136,7 @@
         <h1 class="text-2xl font-bold text-primary">DGPT Europe - Copenhagen Open 2024</h1>
       </div>
       <div class="flex justify-end max-md:flex max-md:flex-col">
-        <h1 class="text-xl font-bold text-primary sm:text-2xl md:hidden">DGPT Europe - Copenhagen Open 2024</h1>
+        <h1 class="text-xl font-bold text-primary sm:text-2xl md:hidden">Copenhagen Open 2024</h1>
         <div class="flex gap-2 max-md:justify-end">
           <CalendarDays />
           <span class="text-sm md:text-md sm:text-base">May 10-12, 2024</span>
