@@ -1,42 +1,35 @@
 <script lang="ts">
-  import Autoplay from 'embla-carousel-autoplay';
   import * as Carousel from '$lib/components/ui/carousel';
   import { ChevronRight } from 'lucide-svelte';
 
   const NEWS = [
     {
-      title: 'Hjem',
-      description: 'Eksempel der linker til hjem',
-      image: 'https://via.placeholder.com/1920x1080', // kan også være lokalt (/images/...)
+      title: 'Qualify for the Copenhagen Open!',
+      description:
+        'Registrations are now open for the Copenhagen Open 2024 Qualification Tournament. Register now to secure your spot in the tournament.',
       link: '/'
     },
     {
       title: 'Title 2',
-      description: 'Nyhed uden link',
-      image: 'https://via.placeholder.com/1920x1080'
+      description: 'Article without a link.'
     }
   ];
 </script>
 
-<div class="space-y-16">
-  <div class="flex flex-col items-center">
+<div class="space-y-12">
+  <div class="flex flex-col items-center pt-4">
     <Carousel.Root
-      class="w-full md:w-10/12"
+      class="w-full"
       opts={{ loop: true }}
-      plugins={[
-        Autoplay({
-          delay: 5000
-        })
-      ]}
     >
       <Carousel.Content>
         {#each NEWS as entry}
-          <Carousel.Item class="select-none">
+          <Carousel.Item class="text-black select-none">
             <svelte:element
               this={entry.link ? 'a' : 'div'}
               href={entry.link}
-              class="absolute top-4 flex w-3/4 items-center justify-between rounded-r-md bg-background/60 p-4 {entry.link &&
-                'cursor-pointer hover:bg-background/80'}"
+              class="flex w-full pb-12 items-center justify-between rounded-md bg-primary p-4 {entry.link &&
+                'cursor-pointer hover:bg-primary/90'}"
             >
               <div>
                 <h2 class="text-xl font-bold unstyled md:text-3xl">{entry.title}</h2>
@@ -44,17 +37,16 @@
               </div>
               <div>
                 {#if entry.link}
-                  <ChevronRight />
+                  <ChevronRight class="w-12 h-12" />
                 {/if}
               </div>
             </svelte:element>
-            <img src={entry.image} alt={entry.title} />
           </Carousel.Item>
         {/each}
       </Carousel.Content>
-      <Carousel.Previous class="hidden md:inline-flex" />
-      <Carousel.Next class="hidden md:inline-flex" />
-      <Carousel.Dots />
+      <Carousel.Previous variant="secondary" />
+      <Carousel.Next variant="secondary" />
+      <Carousel.Dots variant="secondary" />
     </Carousel.Root>
   </div>
   <div class="space-y-4">
