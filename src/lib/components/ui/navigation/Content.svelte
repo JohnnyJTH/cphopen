@@ -26,7 +26,7 @@
 >
   <div
     id="tab-content"
-    class="absolute -left-[10vh] top-[calc(100%_+_10px)] z-50 rounded-lg border border-accent bg-background p-4"
+    class="absolute right-0 top-[calc(100%_+_10px)] z-50 rounded-lg border border-accent bg-background p-4"
     use:motion
   >
     <Bridge />
