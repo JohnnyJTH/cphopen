@@ -1,14 +1,14 @@
 <script lang="ts">
   import Autoplay from 'embla-carousel-autoplay';
-  import { Button } from '$lib/components/ui/button';
   import * as Carousel from '$lib/components/ui/carousel';
+  import { ChevronRight } from 'lucide-svelte';
 
   const NEWS = [
     {
       title: 'Hjem',
       description: 'Eksempel der linker til hjem',
       image: 'https://via.placeholder.com/1920x1080', // kan også være lokalt (/images/...)
-      link: { href: '/', label: 'Go back to home' }
+      link: '/'
     },
     {
       title: 'Title 2',
@@ -21,7 +21,7 @@
 <div class="space-y-16">
   <div class="flex flex-col items-center">
     <Carousel.Root
-      class="w-10/12"
+      class="w-full md:w-10/12"
       opts={{ loop: true }}
       plugins={[
         Autoplay({
@@ -32,25 +32,28 @@
       <Carousel.Content>
         {#each NEWS as entry}
           <Carousel.Item class="select-none">
-            <div
-              class="absolute flex items-center justify-between w-3/4 p-4 top-4 rounded-r-md bg-background/50"
+            <svelte:element
+              this={entry.link ? 'a' : 'div'}
+              href={entry.link}
+              class="absolute top-4 flex w-3/4 items-center justify-between rounded-r-md bg-background/60 p-4 {entry.link &&
+                'cursor-pointer hover:bg-background/80'}"
             >
               <div>
-                <h2 class="text-3xl font-bold unstyled">{entry.title}</h2>
-                <p>{entry.description}</p>
+                <h2 class="text-xl font-bold unstyled md:text-3xl">{entry.title}</h2>
+                <p class="!m-0 text-sm">{entry.description}</p>
               </div>
               <div>
                 {#if entry.link}
-                  <Button href={entry.link.href}>{entry.link.label ?? 'Read more'}</Button>
+                  <ChevronRight />
                 {/if}
               </div>
-            </div>
+            </svelte:element>
             <img src={entry.image} alt={entry.title} />
           </Carousel.Item>
         {/each}
       </Carousel.Content>
-      <Carousel.Previous />
-      <Carousel.Next />
+      <Carousel.Previous class="hidden md:inline-flex" />
+      <Carousel.Next class="hidden md:inline-flex" />
     </Carousel.Root>
   </div>
   <div class="space-y-4">
