@@ -1,5 +1,1 @@
-<script>
-  import { typographyVariants } from '$lib/components/ui/heading';
-</script>
-
-<h1 class={typographyVariants({ type: 'h1' })}>Player Home Page</h1>
+<h1>Player Home Page</h1>

@@ -53,3 +53,19 @@
 .page-container {
   @apply mx-auto max-w-2xl px-4 lg:max-w-7xl lg:px-8 xl:max-w-[100rem];
 }
+
+h1:not(.unstyled) {
+  @apply scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl;
+}
+
+h2:not(.unstyled) {
+  @apply mt-10 scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0;
+}
+
+h3:not(.unstyled) {
+  @apply mt-8 scroll-m-20 text-2xl font-semibold tracking-tight;
+}
+
+p:not(.unstyled) {
+  @apply leading-7 [&:not(:first-child)]:mt-6;
+}
