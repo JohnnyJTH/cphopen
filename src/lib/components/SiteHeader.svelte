@@ -13,20 +13,28 @@
       label: 'Practical info',
       id: 1,
       items: [
-        { href: '/player/accomodation', label: 'Accomodation', description: 'TBA' },
-        { href: '/player/food', label: 'Food', description: 'TBA' }
+        {
+          href: '/player/accomodation',
+          label: 'Accomodation',
+          description: 'Overview of accomodation options around the course.'
+        },
+        {
+          href: '/player/food',
+          label: 'Food',
+          description: 'Information about available food during the tournament.'
+        }
       ]
     },
     {
       label: 'About the tournament',
       id: 2,
       items: [
-        { href: '/player/map', label: 'Area map', description: 'TBA' },
-        { href: '/player/scoring', label: 'Scoring', description: 'TBA' },
-        { href: '/player/ties', label: 'Ties', description: 'TBA' },
-        { href: '/player/spotters', label: 'Spotters', description: 'TBA' },
-        { href: '/player/prize', label: 'Prize money', description: 'TBA' },
-        { href: '/player/contact', label: 'Contact info', description: 'TBA' }
+        { href: '/player/map', label: 'Area map', description: 'A map of all the tournament areas.' },
+        { href: '/player/scoring', label: 'Scoring', description: 'Important information about scoring.' },
+        { href: '/player/ties', label: 'Ties', description: 'How ties are handled.' },
+        { href: '/player/spotters', label: 'Spotters', description: 'Details you need to know about spotters.' },
+        { href: '/player/prize', label: 'Prize money', description: 'Details about the prize pool.' },
+        { href: '/player/contact', label: 'Contact info', description: 'How to contact us via various platforms.' }
       ]
     }
   ];
@@ -136,7 +144,9 @@
         <h1 class="text-2xl font-bold unstyled text-primary">DGPT Europe - Copenhagen Open 2024</h1>
       </div>
       <div class="flex justify-end max-lg:flex max-lg:flex-col">
-        <h1 class="text-xl font-bold unstyled text-primary sm:text-2xl lg:hidden">Copenhagen Open 2024</h1>
+        <h1 class="text-xl font-bold unstyled text-primary sm:text-2xl lg:hidden">
+          Copenhagen Open 2024
+        </h1>
         <div class="flex gap-2 max-lg:justify-end">
           <CalendarDays />
           <span class="text-sm md:text-md sm:text-base">May 10-12, 2024</span>
