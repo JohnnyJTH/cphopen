@@ -9,7 +9,7 @@
 </script>
 
 <div
-  class="relative flex gap-2 h-fit"
+  class="relative flex h-fit"
   role="navigation"
   on:mouseleave={() => handleSetSelected(null)}
 >
