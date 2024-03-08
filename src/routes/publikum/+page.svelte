@@ -3,16 +3,15 @@
   import * as Carousel from '$lib/components/ui/carousel';
   import { ChevronRight } from 'lucide-svelte';
 
-  const NEWS = [
+  const CAROUSEL_ITEMS: { title: string; description: string; image: string; link?: string }[] = [
     {
-      title: 'Hjem',
-      description: 'Eksempel der linker til hjem',
-      image: 'https://via.placeholder.com/1920x1080', // kan også være lokalt (/images/...)
-      link: '/'
+      title: 'Valbyparken',
+      description: 'Valbyparken er den mest spillede disc golf bane i hele verden.',
+      image: '/images/EPT_CopenhagenOpen_0050.webp'
     },
     {
-      title: 'Title 2',
-      description: 'Nyhed uden link',
+      title: 'Titel 2',
+      description: 'Stemningsbillede fra Valbyparken',
       image: 'https://via.placeholder.com/1920x1080'
     }
   ];
@@ -21,7 +20,7 @@
 <div class="space-y-16">
   <div class="flex flex-col items-center">
     <Carousel.Root
-      class="w-full md:w-10/12"
+      class="w-full"
       opts={{ loop: true }}
       plugins={[
         Autoplay({
@@ -30,7 +29,7 @@
       ]}
     >
       <Carousel.Content>
-        {#each NEWS as entry}
+        {#each CAROUSEL_ITEMS as entry}
           <Carousel.Item class="select-none">
             <svelte:element
               this={entry.link ? 'a' : 'div'}
@@ -58,7 +57,7 @@
     </Carousel.Root>
   </div>
   <div class="space-y-4">
-    <h1>Welcome to the Copenhagen Open</h1>
+    <h1>Velkommen til Danmarks største disc golf turnering</h1>
     <p>
       Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto incidunt tempora soluta
       eligendi exercitationem nam reprehenderit quas iste praesentium fuga at, veritatis consectetur

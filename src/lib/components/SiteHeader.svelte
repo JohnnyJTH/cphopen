@@ -5,6 +5,9 @@
   import { Drawer } from 'vaul-svelte';
   import { cn } from '$lib/utils';
 
+  let drawerClose: HTMLButtonElement;
+  $: isHomePage = $page.url.pathname === '/';
+
   const PLAYER_LINKS = [
     { href: '/player', label: 'Home' },
     { href: '/player/schedule', label: 'Schedule' },
@@ -29,35 +32,94 @@
       label: 'About the tournament',
       id: 2,
       items: [
-        { href: '/player/map', label: 'Area map', description: 'A map of all the tournament areas.' },
-        { href: '/player/scoring', label: 'Scoring', description: 'Important information about scoring.' },
+        {
+          href: '/player/map',
+          label: 'Area map',
+          description: 'A map of all the tournament areas.'
+        },
+        {
+          href: '/player/scoring',
+          label: 'Scoring',
+          description: 'Important information about scoring.'
+        },
         { href: '/player/ties', label: 'Ties', description: 'How ties are handled.' },
-        { href: '/player/spotters', label: 'Spotters', description: 'Details you need to know about spotters.' },
-        { href: '/player/prize', label: 'Prize money', description: 'Details about the prize pool.' },
-        { href: '/player/contact', label: 'Contact info', description: 'How to contact us via various platforms.' }
+        {
+          href: '/player/spotters',
+          label: 'Spotters',
+          description: 'Details you need to know about spotters.'
+        },
+        {
+          href: '/player/prize',
+          label: 'Prize money',
+          description: 'Details about the prize pool.'
+        },
+        {
+          href: '/player/contact',
+          label: 'Contact info',
+          description: 'How to contact us via various platforms.'
+        }
       ]
     }
   ];
-
-  const NAV_ITEMS = PLAYER_LINKS.filter((link) => !link.items);
-  // const SUBNAVS = PLAYER_LINKS.filter((link) => link.items);
-  // derive subnavs but type safe
-  const SUBNAVS = PLAYER_LINKS.filter((link) => link.items).map((link) => ({
-    label: link.label,
-    id: link.id ?? 0,
-    items: link.items ?? []
-  }));
-
-  let drawerClose: HTMLButtonElement;
+  const PUBLIKUM_LINKS = [
+    { href: '/publikum', label: 'Hjem' },
+    { href: '/publikum/etik', label: 'Etik' },
+    { href: '/publikum/aktiviteter', label: 'Aktiviteter & Konkurrencer' },
+    {
+      label: 'Information',
+      id: 1,
+      items: [
+        {
+          href: '/publikum/kort',
+          label: 'Områdekort',
+          description: 'Oversigt over turneringsområdet.'
+        },
+        {
+          href: '/publikum/program',
+          label: 'Program',
+          description: 'Oversigt over programmet for turneringen.'
+        },
+        {
+          href: '/publikum/banen',
+          label: 'Banen',
+          description: 'Information om banen og hullerne.'
+        },
+        {
+          href: '/publikum/resultater',
+          label: 'Resultater',
+          description: 'PDGA resultater fra turneringen.'
+        },
+        {
+          href: '/publikum/kontakt',
+          label: 'Kontakt',
+          description: 'Hvordan du kan kontakte os.'
+        }
+      ]
+    }
+  ];
+  $: NAV_ITEMS = $page.url.pathname.includes('/player')
+    ? PLAYER_LINKS.filter((link) => !link.items)
+    : PUBLIKUM_LINKS.filter((link) => !link.items);
+  $: SUBNAVS = $page.url.pathname.includes('/player')
+    ? PLAYER_LINKS.filter((link) => link.items).map((link) => ({
+        label: link.label,
+        id: link.id ?? 0,
+        items: link.items ?? []
+      }))
+    : PUBLIKUM_LINKS.filter((link) => link.items).map((link) => ({
+        label: link.label,
+        id: link.id ?? 0,
+        items: link.items ?? []
+      }));
 </script>
 
 <header
   id="header"
-  class="sticky top-0 z-10 h-16 border-b border-accent bg-background/75 sm:px-6 {$page.url
-    .pathname !== '/' && 'bg-popover/75'} backdrop-blur-lg"
+  class="sticky top-0 z-10 h-16 border-b border-accent bg-background/75 sm:px-6 {!isHomePage &&
+    'bg-popover/75'} backdrop-blur-lg"
 >
   <div class="flex items-center w-full h-full page-container">
-    <div class="flex justify-start {$page.url.pathname === '/' ? 'max-lg:flex-1' : 'flex-1'}">
+    <div class="flex justify-start {isHomePage ? 'max-lg:flex-1' : 'flex-1'}">
       <a href="/">
         <img
           src="/images/edgpt-co.png"
@@ -66,7 +128,7 @@
         />
       </a>
     </div>
-    {#if $page.url.pathname !== '/'}
+    {#if !isHomePage}
       <div class="gap-2 flexjustify-end">
         <div class="hidden lg:flex">
           {#each NAV_ITEMS as item}
