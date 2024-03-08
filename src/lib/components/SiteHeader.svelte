@@ -133,7 +133,7 @@
     {:else}
       <!-- Hovedmenuen er lidt anderledes på startsiden -->
       <div class="justify-center hidden md:flex md:flex-1">
-        <h1 class="text-2xl font-bold text-primary">DGPT Europe - Copenhagen Open 2024</h1>
+        <h1 class="text-2xl font-bold unstyled text-primary">DGPT Europe - Copenhagen Open 2024</h1>
       </div>
       <div class="flex justify-end max-md:flex max-md:flex-col">
         <h1 class="text-xl font-bold text-primary sm:text-2xl md:hidden">Copenhagen Open 2024</h1>
