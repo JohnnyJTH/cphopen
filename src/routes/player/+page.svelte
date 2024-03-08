@@ -2,6 +2,7 @@
   import Autoplay from 'embla-carousel-autoplay';
   import * as Carousel from '$lib/components/ui/carousel';
   import { ChevronRight } from 'lucide-svelte';
+  import type { CarouselAPI } from '$lib/components/ui/carousel/context';
 
   const NEWS = [
     {
@@ -16,11 +17,24 @@
       image: 'https://via.placeholder.com/1920x1080'
     }
   ];
+
+  let api: CarouselAPI;
+  let count = 0;
+  let current = 0;
+
+  $: if (api) {
+    count = api.scrollSnapList().length;
+    current = api.selectedScrollSnap() + 1;
+    api.on('select', () => {
+      current = api.selectedScrollSnap() + 1;
+    });
+  }
 </script>
 
 <div class="space-y-16">
   <div class="flex flex-col items-center">
     <Carousel.Root
+      bind:api
       class="w-full md:w-10/12"
       opts={{ loop: true }}
       plugins={[
@@ -54,6 +68,7 @@
       </Carousel.Content>
       <Carousel.Previous class="hidden md:inline-flex" />
       <Carousel.Next class="hidden md:inline-flex" />
+      <Carousel.Dots />
     </Carousel.Root>
   </div>
   <div class="space-y-4">

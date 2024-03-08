@@ -9,7 +9,7 @@
 
 	let className: $$Props["class"] = undefined;
 	export { className as class };
-	export let variant: VariantProps<typeof buttonVariants>["variant"] = "outline";
+	export let variant: VariantProps<typeof buttonVariants>["variant"] = "default";
 	export let size: VariantProps<typeof buttonVariants>["size"] = "icon";
 
 	const { orientation, canScrollPrev, scrollPrev, handleKeyDown } =
@@ -22,7 +22,7 @@
 	class={cn(
 		"absolute h-8 w-8 touch-manipulation rounded-full",
 		$orientation === "horizontal"
-			? "-left-12 top-1/2 -translate-y-1/2"
+			? "left-4 bottom-0 -translate-y-1/2"
 			: "-top-12 left-1/2 -translate-x-1/2 rotate-90",
 		className
 	)}
@@ -31,6 +31,6 @@
 	on:keydown={handleKeyDown}
 	{...$$restProps}
 >
-	<ArrowLeft class="h-4 w-4" />
+	<ArrowLeft class="w-4 h-4" />
 	<span class="sr-only">Previous slide</span>
 </Button>
