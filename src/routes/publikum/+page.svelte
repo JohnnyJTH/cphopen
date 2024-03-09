@@ -6,13 +6,14 @@
   const CAROUSEL_ITEMS: { title: string; description: string; image: string; link?: string }[] = [
     {
       title: 'Copenhagen Open',
-      description: 'Copenhagen Open er første stop på den helt nye, meget prestigefyldte tour: Disc Golf Pro Tour Europe 2024.',
+      description:
+        'Copenhagen Open er første stop på den helt nye, meget prestigefyldte tour: Disc Golf Pro Tour Europe 2024.',
       image: '/images/ept2023_women-top2.jpg'
     },
     {
       title: 'Titel 2',
       description: 'Stemningsbillede fra Valbyparken',
-      image: 'https://via.placeholder.com/1920x1080'
+      image: 'https://via.placeholder.com/1600x800'
     }
   ];
 </script>
@@ -20,7 +21,7 @@
 <div class="space-y-12">
   <div class="flex flex-col items-center">
     <Carousel.Root
-      class="w-full"
+      class="w-full lg:w-4/5"
       opts={{ loop: true }}
       plugins={[
         Autoplay({
@@ -56,7 +57,7 @@
       <Carousel.Dots />
     </Carousel.Root>
   </div>
-  <div class="space-y-4">
+  <div class="flex flex-col items-center space-y-4">
     <h1>Velkommen til Danmarks største disc golf turnering</h1>
     <p>
       Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto incidunt tempora soluta
