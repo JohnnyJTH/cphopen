@@ -34,7 +34,7 @@
             <svelte:element
               this={entry.link ? 'a' : 'div'}
               href={entry.link}
-              class="absolute top-4 flex w-3/4 2xl:w-3/5 items-center justify-between rounded-r-md bg-background/60 p-4 {entry.link &&
+              class="absolute top-4 flex w-3/4 items-center justify-between rounded-r-md bg-background/60 p-4 {entry.link &&
                 'cursor-pointer hover:bg-background/80'}"
             >
               <div>
@@ -56,7 +56,7 @@
       <Carousel.Dots />
     </Carousel.Root>
   </div>
-  <div class="space-y-4">
+  <div class="space-y-4 w-3/4 2xl:w-3/5">
     <h1>Velkommen til Danmarks største disc golf turnering</h1>
     <p>
       Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto incidunt tempora soluta
