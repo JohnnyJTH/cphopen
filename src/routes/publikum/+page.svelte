@@ -17,7 +17,7 @@
   ];
 </script>
 
-<div class="space-y-12 items-center w-3/4 2xl:w-3/5">
+<div class="space-y-12 items-center">
   <div class="flex flex-col items-center">
     <Carousel.Root
       class=""
@@ -30,7 +30,7 @@
     >
       <Carousel.Content>
         {#each CAROUSEL_ITEMS as entry}
-          <Carousel.Item class="select-none">
+          <Carousel.Item class="select-none items-center w-3/4 2xl:w-3/5">
             <svelte:element
               this={entry.link ? 'a' : 'div'}
               href={entry.link}
@@ -56,7 +56,7 @@
       <Carousel.Dots />
     </Carousel.Root>
   </div>
-  <div class="space-y-4 items-center">
+  <div class="space-y-4 items-center w-3/4 2xl:w-3/5">
     <h1>Velkommen til Danmarks største disc golf turnering</h1>
     <p>
       Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto incidunt tempora soluta
