@@ -18,7 +18,7 @@
 </script>
 
 <div class="space-y-12">
-  <div class="flex flex-col 2xl:w-3/5 items-center">
+  <div class="flex flex-col items-center">
     <Carousel.Root
       class="w-full"
       opts={{ loop: true }}
@@ -56,7 +56,7 @@
       <Carousel.Dots />
     </Carousel.Root>
   </div>
-  <div class="space-y-4 flex flex-col 2xl:w-3/5 items-center">
+  <div class="space-y-4">
     <h1>Velkommen til Danmarks største disc golf turnering</h1>
     <p>
       Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto incidunt tempora soluta
