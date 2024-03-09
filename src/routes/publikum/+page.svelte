@@ -56,7 +56,7 @@
       <Carousel.Dots />
     </Carousel.Root>
   </div>
-  <div class="space-y-4">
+  <div class="space-y-4 2xl:w-3/5 items-center">
     <h1>Velkommen til Danmarks største disc golf turnering</h1>
     <p>
       Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto incidunt tempora soluta
