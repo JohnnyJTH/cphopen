@@ -6,7 +6,7 @@
   const CAROUSEL_ITEMS: { title: string; description: string; image: string; link?: string }[] = [
     {
       title: 'Copenhagen Open',
-      description: 'Copenhagen Open har været første stop på European Pro Tour i 2022 og 2023, og er nu første stop på den mest prestigefyldte tour i verden: Disc Golf Pro Tour.',
+      description: 'Copenhagen Open er første stop på den helt nye, meget prestigefyldte tour: Disc Golf Pro Tour Europe 2024.',
       image: '/images/ept2023_women-top2.jpg'
     },
     {
@@ -17,14 +17,14 @@
   ];
 </script>
 
-<div class="space-y-12 2xl:w-3/4 items-center">
+<div class="space-y-12 2xl:w-3/4 justify-center">
   <div class="flex flex-col items-center">
     <Carousel.Root
       class="w-full"
       opts={{ loop: true }}
       plugins={[
         Autoplay({
-          delay: 5000
+          delay: 10000
         })
       ]}
     >
