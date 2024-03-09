@@ -20,7 +20,7 @@
 <div class="space-y-12">
   <div class="flex flex-col items-center">
     <Carousel.Root
-      class="w-full"
+      class="w-3/4"
       opts={{ loop: true }}
       plugins={[
         Autoplay({
