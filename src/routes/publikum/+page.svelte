@@ -7,7 +7,7 @@
     {
       title: 'Valbyparken',
       description: 'Valbyparken er den mest spillede disc golf bane i hele verden.',
-      image: '/images/EPT_CopenhagenOpen_0050.webp'
+      image: '/images/ept2023_women-top2.jpg'
     },
     {
       title: 'Titel 2',

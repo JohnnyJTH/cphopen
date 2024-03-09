@@ -16,7 +16,7 @@
       </Button>
       <Button href="/player" variant="huge" size="huge">
         <User strokeWidth="3" class="w-12 h-12 text-primary lg:h-24 lg:w-24" />
-        <h2 class="text-3xl unstyled lg:text-5xl text-primary">For players</h2>
+        <h2 class="text-3xl unstyled lg:text-5xl text-primary text-white">For players</h2>
       </Button>
     </div>
   </div>
