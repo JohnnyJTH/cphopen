@@ -17,7 +17,7 @@
   ];
 </script>
 
-<div class="space-y-12 2xl:w-3/4 justify-center">
+<div class="space-y-12 2xl:w-3/4 justify-center items-center place-content-center content-center">
   <div class="flex flex-col items-center">
     <Carousel.Root
       class="w-full"

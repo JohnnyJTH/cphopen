@@ -17,7 +17,7 @@
 </script>
 
 <div class="space-y-12">
-  <div class="flex flex-col items-center pt-4">
+  <div class="flex flex-col items-center pt-4 min-h-48">
     <Carousel.Root
       class="w-full"
       opts={{ loop: true }}
