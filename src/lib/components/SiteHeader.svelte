@@ -125,6 +125,7 @@
           src="/images/edgpt-co.png"
           class="w-12 h-12"
           alt="DGPT Europe - Copenhagen Open 2024"
+          style="position: fixed; height: 100px !important"
         />
       </a>
     </div>

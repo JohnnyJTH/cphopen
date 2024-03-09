@@ -18,9 +18,9 @@
 </script>
 
 <div class="space-y-12">
-  <div class="flex flex-col items-start">
+  <div class="flex flex-col items-center">
     <Carousel.Root
-      class="w-3/5"
+      class="w-3/4 2xl:w-3/5"
       opts={{ loop: true }}
       plugins={[
         Autoplay({
@@ -34,7 +34,7 @@
             <svelte:element
               this={entry.link ? 'a' : 'div'}
               href={entry.link}
-              class="absolute top-4 flex w-3/4 items-center justify-between rounded-r-md bg-background/60 p-4 {entry.link &&
+              class="absolute top-4 flex w-3/4 2xl:w-3/5 items-center justify-between rounded-r-md bg-background/60 p-4 {entry.link &&
                 'cursor-pointer hover:bg-background/80'}"
             >
               <div>
