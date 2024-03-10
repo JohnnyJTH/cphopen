@@ -9,7 +9,7 @@
   class="-mb-16 -mt-16 h-screen w-screen bg-[''] bg-cover bg-center bg-no-repeat"
 >
   <div
-    class="absolute z-10 -translate-x-1/2 -translate-y-1/2 rounded-full left-1/2 top-1/2 bg-primary"
+    class="absolute z-10 -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2"
   >
     <img src="/images/edgpt-co.png" class="p-1 w-96 lg:w-64 xl:w-80 2xl:w-96" />
   </div>
