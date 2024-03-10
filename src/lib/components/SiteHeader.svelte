@@ -115,17 +115,18 @@
 
 <header
   id="header"
-  class="sticky top-0 z-10 h-16 border-b border-accent bg-background/75 sm:px-6 {!isHomePage &&
+  class="sticky top-0 z-10 h-16 border-b border-accent bg-background/75 {!isHomePage &&
     'bg-popover/75'} backdrop-blur-lg"
 >
   <div class="flex items-center w-full h-full page-container">
     <div class="flex justify-start {isHomePage ? 'max-lg:flex-1' : 'flex-1'}">
-      <a href="/">
-        <img
-          src="/images/edgpt-co.png"
-          class="w-12 h-12"
-          alt="DGPT Europe - Copenhagen Open 2024"
-        />
+      <a href="/" class="flex items-center gap-2">
+        <img src="/images/edgpt-icon.png" class="h-12" alt="DGPT Europe - Copenhagen Open 2024" />
+        {#if !isHomePage}
+          <span class="font-mono text-2xl font-bold leading-10 text-primary sm:text-3xl"
+            >Copenhagen Open</span
+          >
+        {/if}
       </a>
     </div>
     {#if !isHomePage}
