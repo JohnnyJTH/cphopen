@@ -15,7 +15,7 @@
   <div
     class="flex flex-row items-center justify-between w-full h-full mx-auto page-container 8 max"
   >
-    <span class="text-gray-300 md:text-center">© {year} KFK Disc Golf</span>
+    <span class="text-muted-foreground md:text-center">© {year} KFK Disc Golf</span>
     <ul class="flex flex-wrap items-center text-sm font-medium md:mt-0">
       <li>
         <Button

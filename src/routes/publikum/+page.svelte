@@ -56,12 +56,12 @@
       <Carousel.Dots />
     </Carousel.Root>
   </div>
-  <div class="flex flex-col items-center space-y-4">
-    <h1>Velkommen til Danmarks største disc golf turnering</h1>
+  <div class="flex flex-col space-y-4">
+    <h1>Europas største disc golf-turnering kommer igen forbi København</h1>
     <p>
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto incidunt tempora soluta
-      eligendi exercitationem nam reprehenderit quas iste praesentium fuga at, veritatis consectetur
-      ad laborum quia, id, autem a deleniti!
+      Fra fredag den 10. maj til søndag den 12. maj 2024 spiller Europas bedste disc golf-spillere
+      Copenhagen Open i Valbyparken. Den traditionsrige turnering er første stop på den nyetablerede
+      Disc Golf Pro Tour Europe.
     </p>
   </div>
 </div>

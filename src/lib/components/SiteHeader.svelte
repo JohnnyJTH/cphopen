@@ -63,8 +63,8 @@
   ];
   const PUBLIKUM_LINKS = [
     { href: '/publikum', label: 'Hjem' },
-    { href: '/publikum/etik', label: 'Etik' },
-    { href: '/publikum/aktiviteter', label: 'Aktiviteter & Konkurrencer' },
+    { href: '/publikum/tilskueradfærd', label: 'Tilskueradfærd' },
+    { href: '/publikum/aktiviteter', label: 'Aktiviteter' },
     {
       label: 'Information',
       id: 1,
