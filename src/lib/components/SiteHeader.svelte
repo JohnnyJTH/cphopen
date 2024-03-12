@@ -124,7 +124,7 @@
         <img src="/images/edgpt-icon.png" class="h-12" alt="DGPT Europe - Copenhagen Open 2024" />
         {#if !isHomePage}
           <span class="font-mono text-2xl font-bold leading-10 text-primary sm:text-3xl"
-            >Copenhagen Open</span
+            >Copenhagen Open 2024</span
           >
         {/if}
       </a>

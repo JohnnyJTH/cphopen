@@ -18,7 +18,7 @@
   ];
 </script>
 
-<div class="space-y-12">
+<div class="space-y-12 2xl:w-3/4 m-auto">
   <div class="flex flex-col items-center">
     <Carousel.Root
       opts={{ loop: true }}
@@ -56,8 +56,8 @@
       <Carousel.Dots />
     </Carousel.Root>
   </div>
-  <div class="flex flex-col w-1/2">
-    <h1>Europas største disc golf-turnering kommer igen forbi København</h1>
+  <div class="flex flex-col 2xl:w-1/2 space-y-2 m-auto">
+    <h2>Europas største disc golf-turnering kommer igen forbi København</h2>
     <p>
       Fra fredag den 10. maj til søndag den 12. maj 2024 spiller Europas bedste disc golf-spillere
       Copenhagen Open i Valbyparken. Den traditionsrige turnering er første stop på den nyetablerede
