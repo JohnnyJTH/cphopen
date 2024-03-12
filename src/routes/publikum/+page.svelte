@@ -56,7 +56,7 @@
       <Carousel.Dots />
     </Carousel.Root>
   </div>
-  <div class="flex flex-col space-y-4">
+  <div class="flex flex-col w-1/2">
     <h1>Europas største disc golf-turnering kommer igen forbi København</h1>
     <p>
       Fra fredag den 10. maj til søndag den 12. maj 2024 spiller Europas bedste disc golf-spillere

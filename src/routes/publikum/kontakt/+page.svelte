@@ -7,7 +7,7 @@
     <h1>Kontakt os</h1>
     <div class="space-y-4">
       <div class="space-y-2">
-        <h3 class="text-xl font-bold unstyled">Email</h3>
+        <h3 class="text-xl font-bold unstyled">E-mail</h3>
         <div class="flex items-center">
           <Mail class="w-5 h-5" />
           <a href="mailto:sf@cphopen.dk" class="ml-3 underline text-primary">sf@cphopen.dk</a>
@@ -25,9 +25,9 @@
   <div class="border-t border-gray-200" />
   <div class="space-y-4">
     <div class="space-y-2">
-      <h2 class="text-2xl font-bold unstyled">Sponsoratforespørgelser</h2>
+      <h2 class="text-2xl font-bold unstyled">Sponsorforespørgelser</h2>
       <p class="text-muted-foreground">
-        Til sponsoratforespørgelser, kontakt venligst vores sponsoransvarlige.
+        For sponsorforespørgelser, kontakt venligst vores sponsoransvarlige.
       </p>
     </div>
     <div class="space-y-2">
