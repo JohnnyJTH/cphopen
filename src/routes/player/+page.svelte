@@ -4,9 +4,9 @@
 
   const NEWS = [
     {
-      title: 'Qualify for the Copenhagen Open!',
+      title: '11/3: Qualify for the Copenhagen Open!',
       description:
-        'Registration is now open for the Copenhagen Open 2024 Qualification Tournament. Register now to get a chance to win a spot in the tournament.',
+        'Registration is now open for the Copenhagen Open 2024 Qualification Tournament. Register now to get a chance to win a spot in the tournament.<br>',
       link: 'https://discgolfmetrix.com/2852767'
     },
     {
@@ -49,8 +49,8 @@
       <Carousel.Dots variant="secondary" />
     </Carousel.Root>
   </div>
-  <div class="space-y-4">
-    <h1>Welcome to the Copenhagen Open</h1>
+  <div class="space-y-2 2xl:w-1/2 m-auto">
+    <h2>Welcome to the Copenhagen Open</h2>
     <p>
       Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto incidunt tempora soluta
       eligendi exercitationem nam reprehenderit quas iste praesentium fuga at, veritatis consectetur

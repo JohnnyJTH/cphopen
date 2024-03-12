@@ -19,12 +19,12 @@
         {
           href: '/player/accomodation',
           label: 'Accomodation',
-          description: 'Overview of accomodation options around the course.'
+          description: 'Accomodation options near the course.'
         },
         {
           href: '/player/food',
           label: 'Food',
-          description: 'Information about available food during the tournament.'
+          description: 'Food options during the tournament.'
         }
       ]
     },
@@ -35,28 +35,31 @@
         {
           href: '/player/map',
           label: 'Area map',
-          description: 'A map of all the tournament areas.'
+          description: 'Mp of the whole tournament area.'
         },
         {
           href: '/player/scoring',
           label: 'Scoring',
           description: 'Important information about scoring.'
         },
-        { href: '/player/ties', label: 'Ties', description: 'How ties are handled.' },
+        { 
+          href: '/player/ties', 
+          label: 'Ties', 
+          description: 'Resolving first place ties.' },
         {
           href: '/player/spotters',
           label: 'Spotters',
-          description: 'Details you need to know about spotters.'
+          description: 'Spotters are your friends.'
         },
         {
           href: '/player/prize',
           label: 'Prize money',
-          description: 'Details about the prize pool.'
+          description: 'Prize money table.'
         },
         {
           href: '/player/contact',
           label: 'Contact info',
-          description: 'How to contact us via various platforms.'
+          description: 'How to contact us.'
         }
       ]
     }
@@ -64,12 +67,16 @@
   const PUBLIKUM_LINKS = [
     { href: '/publikum', label: 'Hjem' },
     { href: '/publikum/tilskueradfærd', label: 'Tilskueradfærd' },
-    { href: '/publikum/aktiviteter', label: 'Aktiviteter' },
+    { href: '/publikum/grupper', label: 'Grupper' },
     {
       label: 'Information',
       id: 1,
       items: [
         {
+          href: '/publikum/aktiviteter',
+          label: 'Aktiviteter',
+          description: 'Information om aktiviteter og konkurrencer.'
+        },{
           href: '/publikum/kort',
           label: 'Områdekort',
           description: 'Oversigt over turneringsområdet.'
@@ -77,7 +84,7 @@
         {
           href: '/publikum/program',
           label: 'Program',
-          description: 'Oversigt over programmet for turneringen.'
+          description: 'Tidsplan for turneringsugen.'
         },
         {
           href: '/publikum/banen',
@@ -87,12 +94,12 @@
         {
           href: '/publikum/resultater',
           label: 'Resultater',
-          description: 'PDGA resultater fra turneringen.'
+          description: 'Resultater fra turneringen.'
         },
         {
           href: '/publikum/kontakt',
           label: 'Kontakt',
-          description: 'Hvordan du kan kontakte os.'
+          description: 'Kontakt os.'
         }
       ]
     }
@@ -123,7 +130,7 @@
       <a href="/" class="flex items-center gap-2">
         <img src="/images/edgpt-icon.png" class="h-12" alt="DGPT Europe - Copenhagen Open 2024" />
         {#if !isHomePage}
-          <span class="font-mono text-2xl font-bold leading-10 text-primary sm:text-3xl"
+          <span class="font-mono text-xl font-bold leading-10 text-primary sm:text-2xl"
             >Copenhagen Open 2024</span
           >
         {/if}
