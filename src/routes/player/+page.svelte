@@ -6,7 +6,7 @@
     {
       title: '11/3: Qualify for the Copenhagen Open!',
       description:
-        'Registration is now open for the Copenhagen Open 2024 Qualification Tournament. Register now to get a chance to win a spot in the tournament.<br>',
+        'Registration is now open for the Copenhagen Open 2024 Qualification Tournament. Register now to get a chance to win a spot in the tournament.',
       link: 'https://discgolfmetrix.com/2852767'
     },
     {
@@ -16,7 +16,7 @@
   ];
 </script>
 
-<div class="space-y-12">
+<div class="space-y-4">
   <div class="flex flex-col items-center pt-4 min-h-1/3">
     <Carousel.Root
       class="w-full"
@@ -33,7 +33,7 @@
             >
               <div>
                 <h2 class="text-xl font-bold unstyled md:text-3xl">{entry.title}</h2>
-                <p class="!m-0 text-sm">{entry.description}</p>
+                <p class="!m-0 text-sm mb-8">{entry.description}</p>
               </div>
               <div>
                 {#if entry.link}
@@ -49,7 +49,7 @@
       <Carousel.Dots variant="secondary" />
     </Carousel.Root>
   </div>
-  <div class="space-y-2 2xl:w-1/2 m-auto">
+  <div class="2xl:w-1/2 m-auto">
     <h2>Welcome to the Copenhagen Open</h2>
     <p>
       Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto incidunt tempora soluta
