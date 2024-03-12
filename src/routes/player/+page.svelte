@@ -17,7 +17,7 @@
 </script>
 
 <div class="space-y-4">
-  <div class="flex flex-col items-center pt-4 min-h-1/3">
+  <div class="items-center 2xl:w-3/4 m-auto">
     <Carousel.Root
       class="w-full"
       opts={{ loop: true }}
@@ -33,7 +33,7 @@
             >
               <div>
                 <h2 class="text-xl font-bold unstyled md:text-3xl">{entry.title}</h2>
-                <p class="!m-0 text-sm mb-8">{entry.description}</p>
+                <p class="text-sm mb-8">{entry.description}</p>
               </div>
               <div>
                 {#if entry.link}
