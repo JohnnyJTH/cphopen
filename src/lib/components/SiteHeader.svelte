@@ -143,7 +143,7 @@
             <a
               href={item.href}
               class={`flex items-center gap-1 rounded-md px-3 py-1.5 transition-colors ${
-                $page.url.pathname === item.href
+                decodeURI($page.url.pathname) === item.href
                   ? 'text-primary underline underline-offset-4'
                   : 'text-foreground hover:text-primary'
               }`}
@@ -173,7 +173,7 @@
                         href={item.href}
                         class={cn(
                           'font-mono text-3xl font-bold uppercase sm:text-5xl',
-                          $page.url.pathname === item.href &&
+                          decodeURI($page.url.pathname) === item.href &&
                             'text-primary underline underline-offset-8'
                         )}>{item.label}</a
                       >
