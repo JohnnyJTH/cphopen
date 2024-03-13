@@ -6,7 +6,7 @@
     {
       title: '11/3: Qualify for the Copenhagen Open!',
       description:
-        'Registration is now open for the Copenhagen Open 2024 Qualification Tournament. Register now to get a chance to win a spot in the tournament.',
+        'Registration is open for the Copenhagen Open 2024 Qualification Tournament.\nRegister now to get a chance to win a spot in the tournament.',
       link: 'https://discgolfmetrix.com/2852767'
     },
     {
