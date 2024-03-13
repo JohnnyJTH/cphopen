@@ -6,7 +6,8 @@
     {
       title: '11/3: Qualify for the Copenhagen Open!',
       description:
-        'Registration is open for the Copenhagen Open 2024 Qualification Tournament.\nRegister now to get a chance to win a spot in the tournament.',
+        'Registration is open for the Copenhagen Open 2024 Qualification Tournament.
+        Register now to get a chance to win a spot in the tournament.',
       link: 'https://discgolfmetrix.com/2852767'
     },
     {
@@ -33,7 +34,7 @@
             >
               <div>
                 <h2 class="text-xl font-bold unstyled md:text-3xl">{entry.title}</h2>
-                <p class="text-sm mb-8">{entry.description}</p>
+                <p class="text-sm mb-12">{entry.description}</p>
               </div>
               <div>
                 {#if entry.link}
