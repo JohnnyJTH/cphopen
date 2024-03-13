@@ -25,9 +25,9 @@
   <div class="border-t border-gray-200" />
   <div class="space-y-4">
     <div class="space-y-2">
-      <h2 class="text-2xl font-bold unstyled">Sponsorforespørgelser</h2>
+      <h2 class="text-2xl font-bold unstyled">Sponsorforespørgsler</h2>
       <p class="text-muted-foreground">
-        For sponsorforespørgelser, kontakt venligst vores sponsoransvarlige.
+        For sponsorforespørgsler, kontakt venligst vores sponsoransvarlige.
       </p>
     </div>
     <div class="space-y-2">

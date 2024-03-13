@@ -17,6 +17,11 @@
       id: 1,
       items: [
         {
+          href: '/player/groups',
+          label: 'Groups',
+          description: 'Groups for the next round.'
+        },
+        {
           href: '/player/accomodation',
           label: 'Accomodation',
           description: 'Accomodation options near the course.'
@@ -35,17 +40,8 @@
         {
           href: '/player/map',
           label: 'Area map',
-          description: 'Mp of the whole tournament area.'
+          description: 'Map of the whole tournament area.'
         },
-        {
-          href: '/player/scoring',
-          label: 'Scoring',
-          description: 'Important information about scoring.'
-        },
-        { 
-          href: '/player/ties', 
-          label: 'Ties', 
-          description: 'Resolving first place ties.' },
         {
           href: '/player/spotters',
           label: 'Spotters',
@@ -57,6 +53,15 @@
           description: 'Prize money table.'
         },
         {
+          href: '/player/scoring',
+          label: 'Scoring',
+          description: 'Important information about scoring.'
+        },
+        { 
+          href: '/player/ties', 
+          label: 'Ties', 
+          description: 'Resolving first place ties.' },
+        {
           href: '/player/contact',
           label: 'Contact info',
           description: 'How to contact us.'
@@ -67,19 +72,20 @@
   const PUBLIKUM_LINKS = [
     { href: '/publikum', label: 'Hjem' },
     { href: '/publikum/tilskueradfærd', label: 'Tilskueradfærd' },
-    { href: '/publikum/grupper', label: 'Grupper' },
+    { href: '/publikum/kort', label: 'Områdekort' },
     {
       label: 'Information',
       id: 1,
       items: [
         {
-          href: '/publikum/aktiviteter',
-          label: 'Aktiviteter',
-          description: 'Information om aktiviteter og konkurrencer.'
-        },{
-          href: '/publikum/kort',
-          label: 'Områdekort',
-          description: 'Oversigt over turneringsområdet.'
+          href: '/publikum/banen',
+          label: 'Banen',
+          description: 'Information om banen og hullerne.'
+        },
+        {
+          href: '/publikum/grupper',
+          label: 'Teetider',
+          description: 'Tidspunkter for de grupper, spillerne starter på'
         },
         {
           href: '/publikum/program',
@@ -87,9 +93,9 @@
           description: 'Tidsplan for turneringsugen.'
         },
         {
-          href: '/publikum/banen',
-          label: 'Banen',
-          description: 'Information om banen og hullerne.'
+          href: '/publikum/aktiviteter',
+          label: 'Aktiviteter',
+          description: 'Information om aktiviteter og konkurrencer.'
         },
         {
           href: '/publikum/resultater',

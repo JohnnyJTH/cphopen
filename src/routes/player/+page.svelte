@@ -17,7 +17,7 @@
 </script>
 
 <div class="space-y-4">
-  <div class="items-center 2xl:w-3/4 m-auto">
+  <div class="items-center 2xl:w-3/4 mx-auto">
     <Carousel.Root
       class="w-full"
       opts={{ loop: true }}
@@ -49,7 +49,7 @@
       <Carousel.Dots variant="secondary" />
     </Carousel.Root>
   </div>
-  <div class="2xl:w-1/2 m-auto">
+  <div class="2xl:w-1/2 mx-auto">
     <h2>Welcome to the Copenhagen Open</h2>
     <p>
       Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto incidunt tempora soluta
