@@ -57,10 +57,11 @@
           label: 'Scoring',
           description: 'Important information about scoring.'
         },
-        { 
-          href: '/player/ties', 
-          label: 'Ties', 
-          description: 'Resolving first place ties.' },
+        {
+          href: '/player/ties',
+          label: 'Ties',
+          description: 'Resolving first place ties.'
+        },
         {
           href: '/player/contact',
           label: 'Contact info',
@@ -136,7 +137,7 @@
       <a href="/" class="flex items-center gap-2">
         <img src="/images/edgpt-icon.png" class="h-12" alt="DGPT Europe - Copenhagen Open 2024" />
         {#if !isHomePage}
-          <span class="font-mono text-xl font-bold leading-10 text-primary sm:text-2xl"
+          <span class="font-bold leading-10 atext-xl text-primary sm:text-2xl"
             >Copenhagen Open 2024</span
           >
         {/if}
