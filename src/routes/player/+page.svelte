@@ -17,35 +17,33 @@
 </script>
 
 <div class="max-w-3xl mx-auto space-y-4">
-  <div class="items-center">
-    <Carousel.Root class="w-full" opts={{ loop: true }}>
-      <Carousel.Content>
-        {#each NEWS as entry}
-          <Carousel.Item class="text-black select-none">
-            <svelte:element
-              this={entry.link ? 'a' : 'div'}
-              href={entry.link}
-              class="flex w-full items-center gap-4 justify-between rounded-md bg-primary p-4 {entry.link &&
-                'cursor-pointer hover:bg-primary/90'}"
-            >
-              <div>
-                <h2 class="text-xl font-bold unstyled md:text-3xl">{entry.title}</h2>
-                <p class="mb-16 text-sm">{entry.description}</p>
-              </div>
-              <div>
-                {#if entry.link}
-                  <ChevronRight class="w-12 h-12" />
-                {/if}
-              </div>
-            </svelte:element>
-          </Carousel.Item>
-        {/each}
-      </Carousel.Content>
-      <Carousel.Previous variant="secondary" />
-      <Carousel.Next variant="secondary" />
-      <Carousel.Dots variant="secondary" />
-    </Carousel.Root>
-  </div>
+  <Carousel.Root class="w-full pt-4" opts={{ loop: true }}>
+    <Carousel.Content>
+      {#each NEWS as entry}
+        <Carousel.Item class="text-black select-none">
+          <svelte:element
+            this={entry.link ? 'a' : 'div'}
+            href={entry.link}
+            class="flex w-full items-center justify-between gap-4 rounded-md bg-primary p-4 {entry.link &&
+              'cursor-pointer hover:bg-primary/90'}"
+          >
+            <div>
+              <h2 class="text-xl font-bold unstyled md:text-3xl">{entry.title}</h2>
+              <p class="mb-16 text-sm">{entry.description}</p>
+            </div>
+            <div>
+              {#if entry.link}
+                <ChevronRight class="w-12 h-12" />
+              {/if}
+            </div>
+          </svelte:element>
+        </Carousel.Item>
+      {/each}
+    </Carousel.Content>
+    <Carousel.Previous variant="secondary" />
+    <Carousel.Next variant="secondary" />
+    <Carousel.Dots variant="secondary" />
+  </Carousel.Root>
   <div>
     <h2>Welcome to the Copenhagen Open</h2>
     <p>
