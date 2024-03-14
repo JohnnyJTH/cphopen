@@ -7,7 +7,7 @@
     <h1>Kontakt os</h1>
     <div class="space-y-4">
       <div class="space-y-2">
-        <h3 class="text-xl font-bold unstyled">E-mail</h3>
+        <h3 class="text-xl font-bold unstyled">Email</h3>
         <div class="flex items-center">
           <Mail class="w-5 h-5" />
           <a href="mailto:sf@cphopen.dk" class="ml-3 underline text-primary">sf@cphopen.dk</a>
