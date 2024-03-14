@@ -10,7 +10,19 @@
     </div>
   </div>
   <div class="space-y-4">
-    <h3 class="text-center">Tuesday &mdash; Thursday</h3>
+    <h3 class="text-center">Tuesday</h3>
+    <div>
+      <ScheduleItem time="all day" title="Practice Rounds" last />
+    </div>
+  </div>
+  <div class="space-y-4">
+    <h3 class="text-center">Wednesday</h3>
+    <div>
+      <ScheduleItem time="all day" title="Practice Rounds" last />
+    </div>
+  </div>
+  <div class="space-y-4">
+    <h3 class="text-center">Thursday</h3>
     <div>
       <ScheduleItem time="all day" title="Practice Rounds" last />
     </div>

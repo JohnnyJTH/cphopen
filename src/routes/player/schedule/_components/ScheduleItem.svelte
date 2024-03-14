@@ -1,6 +1,7 @@
 <script lang="ts">
   export let time: string;
   export let title: string;
+  export let description = '';
   export let important = false;
   export let last = false;
 </script>
@@ -11,7 +12,7 @@
   <div class="flex-1 space-y-4 {!last && 'pb-12'}">
     <h4 class="text-xl font-bold {important && 'text-primary'}">{title}</h4>
     <p class={important ? 'text-white' : 'text-muted-foreground'}>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos unde explicabo nesciunt.
+      {description}
     </p>
   </div>
 </div>
