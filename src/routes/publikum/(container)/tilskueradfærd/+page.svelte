@@ -1,4 +1,3 @@
-<div class="2xl:w-1/2 mx-auto">
 <h1>Tilskueradfærd</h1>
 <p>
   Ligesom i traditionel golf er spillerne meget fokuserede under spillet, så vi beder indtrængende
@@ -6,4 +5,3 @@
   lydløs. Vi opfordrer alle til at samles langs hullerne for at komme så tæt på spillet som muligt,
   men samtidig beder vi om, at man ikke krydser banen, mens der er spil i gang.
 </p>
-</div>

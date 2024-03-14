@@ -18,8 +18,8 @@
   ];
 </script>
 
-<div class="space-y-4">
-  <div class="flex flex-col items-center 2xl:w-3/4 mx-auto">
+<div class="max-w-3xl mx-auto space-y-4">
+  <div class="flex flex-col items-center">
     <Carousel.Root
       opts={{ loop: true }}
       plugins={[
@@ -56,7 +56,7 @@
       <Carousel.Dots />
     </Carousel.Root>
   </div>
-  <div class="flex flex-col 2xl:w-1/2 mx-auto">
+  <div class="flex flex-col">
     <h2>Europas største disc golf-turnering kommer igen forbi København</h2>
     <p>
       Fra fredag den 10. maj til søndag den 12. maj 2024 spiller Europas bedste disc golf-spillere
