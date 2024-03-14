@@ -24,7 +24,7 @@
           <svelte:element
             this={entry.link ? 'a' : 'div'}
             href={entry.link}
-            class="flex w-full items-center justify-between gap-4 rounded-md bg-primary p-4 {entry.link &&
+            class="flex w-full h-full items-center justify-between gap-4 rounded-md bg-primary p-4 {entry.link &&
               'cursor-pointer hover:bg-primary/90'}"
           >
             <div>
