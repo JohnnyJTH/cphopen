@@ -50,8 +50,6 @@
       In the top menu you can find information regarding schedule, course layout and practical
       information surrounding the tournament about accommodation, food etc.<br />
       This information will be published continuously, when they are set.
-      In the top menu you can find information regarding schedule, course layout and practical information surrounding the tournament about accommodation, food etc.<br>
-      This information will be published continuously, when it is set.
     </p>
     <p>We are delighted to be hosting you and the rest of the field!</p>
   </div>
