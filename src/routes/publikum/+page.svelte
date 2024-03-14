@@ -1,5 +1,6 @@
 <script lang="ts">
   import Autoplay from 'embla-carousel-autoplay';
+  import { Button } from '$lib/components/ui/button';
   import * as Carousel from '$lib/components/ui/carousel';
   import { ChevronRight } from 'lucide-svelte';
 
@@ -66,6 +67,6 @@
     <p>
       Vi opfordrer alle tilskuere til at registrere sig og få en gratis billet til de(n) dag(e), hvor man ønsker at komme. Ved at få en billet har vi mulighed for at kontakte tilskuere ved vigtige hændelser, som f. eks. afbrydelser pga. farligt vejr. Man får ligeledes adgang til en app, hvor der er mere information omkring turneringen.
     </p>
-    <button>Køb billetter her</button>
+    <Button href="link her">Køb billetter her</Button>
   </div>
 </div>
