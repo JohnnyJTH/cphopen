@@ -12,9 +12,9 @@
       image: '/images/ept2023_women-top2.jpg'
     },
     {
-      title: 'Titel 2',
-      description: 'Stemningsbillede fra Valbyparken',
-      image: 'https://via.placeholder.com/1600x800'
+      title: 'Valbyparken',
+      description: 'Turneringen løber af stablen på VERDENS mest spillede bane - nemlig vores egen Valbyparken Disc Golf Park. Det er vi meget stolte af.',
+      image: '/images/ept2023_spectators1.jpg'
     }
   ];
 </script>

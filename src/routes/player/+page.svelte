@@ -8,10 +8,6 @@
       description: `Registration is open for the Copenhagen Open 2024 Qualification Tournament.
         Register now to get a chance to win a spot in the tournament.`,
       link: 'https://discgolfmetrix.com/2852767'
-    },
-    {
-      title: 'Title 2',
-      description: 'Article without a link.'
     }
   ];
 </script>
@@ -47,9 +43,13 @@
   <div>
     <h2>Welcome to the Copenhagen Open</h2>
     <p>
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto incidunt tempora soluta
-      eligendi exercitationem nam reprehenderit quas iste praesentium fuga at, veritatis consectetur
-      ad laborum quia, id, autem a deleniti!
+      You are one of the 136 players in the all sold out first event of the inaugural Disc Golf Pro Tour Europe, Copenhagen Open 2024.
+    </p>
+      In the top menu you can find information regarding schedule, course layout and practical information surrounding the tournament about accommodation, food etc.<br>
+      This information will be published continuously, when they are set.
+    </p>
+    <p>
+      We are delighted to be hosting you and the rest of the field!
     </p>
   </div>
 </div>
