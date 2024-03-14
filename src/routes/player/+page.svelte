@@ -20,7 +20,7 @@
           <svelte:element
             this={entry.link ? 'a' : 'div'}
             href={entry.link}
-            class="flex w-full h-full items-center justify-between gap-4 rounded-md bg-primary p-4 {entry.link &&
+            class="flex h-full w-full items-center justify-between gap-4 rounded-md bg-primary p-4 {entry.link &&
               'cursor-pointer hover:bg-primary/90'}"
           >
             <div>
@@ -43,13 +43,14 @@
   <div>
     <h2>Welcome to the Copenhagen Open</h2>
     <p>
-      You are one of the 136 players in the all sold out first event of the inaugural Disc Golf Pro Tour Europe, Copenhagen Open 2024.
-    </p>
-      In the top menu you can find information regarding schedule, course layout and practical information surrounding the tournament about accommodation, food etc.<br>
-      This information will be published continuously, when they are set.
+      You are one of the 136 players in the all sold out first event of the inaugural Disc Golf Pro
+      Tour Europe, Copenhagen Open 2024.
     </p>
     <p>
-      We are delighted to be hosting you and the rest of the field!
+      In the top menu you can find information regarding schedule, course layout and practical
+      information surrounding the tournament about accommodation, food etc.<br />
+      This information will be published continuously, when they are set.
     </p>
+    <p>We are delighted to be hosting you and the rest of the field!</p>
   </div>
 </div>
