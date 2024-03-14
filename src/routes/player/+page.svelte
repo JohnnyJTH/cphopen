@@ -46,7 +46,7 @@
       You are one of the 136 players in the all sold out first event of the inaugural Disc Golf Pro Tour Europe, Copenhagen Open 2024.
     </p>
       In the top menu you can find information regarding schedule, course layout and practical information surrounding the tournament about accommodation, food etc.<br>
-      This information will be published continuously, when they are set.
+      This information will be published continuously, when it is set.
     </p>
     <p>
       We are delighted to be hosting you and the rest of the field!
