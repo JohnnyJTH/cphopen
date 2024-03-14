@@ -47,7 +47,7 @@
     </Carousel.Root>
   </div>
   <div>
-    <h1>Welcome to the Copenhagen Open</h1>
+    <h2>Welcome to the Copenhagen Open</h2>
     <p>
       Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto incidunt tempora soluta
       eligendi exercitationem nam reprehenderit quas iste praesentium fuga at, veritatis consectetur
