@@ -6,38 +6,39 @@
   <div class="space-y-4">
     <h3 class="text-center">Monday</h3>
     <div>
-      <ScheduleItem time="all day" title="Qualification Tournament" last />
+      <ScheduleItem time="08:00" title="Course open for practice" last />
+      <ScheduleItem time="16:30" title="Qualification Tournament" last />
     </div>
   </div>
   <div class="space-y-4">
     <h3 class="text-center">Tuesday</h3>
     <div>
-      <ScheduleItem time="all day" title="Practice Rounds" last />
+      <ScheduleItem time="08:00" title="Course open for practice" last />
     </div>
   </div>
   <div class="space-y-4">
     <h3 class="text-center">Wednesday</h3>
     <div>
-      <ScheduleItem time="all day" title="Practice Rounds" last />
+      <ScheduleItem time="08:00" title="Course open for practice" last />
     </div>
   </div>
   <div class="space-y-4">
     <h3 class="text-center">Thursday</h3>
     <div>
-      <ScheduleItem time="all day" title="Practice Rounds" last />
+      <ScheduleItem time="08:00" title="Course open for practice" last />
     </div>
   </div>
   <div class="space-y-4">
     <h3 class="text-center">Friday</h3>
     <div>
-      <ScheduleItem time="08:30" title="First Tee-Off" />
+      <ScheduleItem time="08:30" title="First Tee-Off" important />
       <ScheduleItem time="16:00" title="Last Tee-Off" last />
     </div>
   </div>
   <div class="space-y-4">
     <h3 class="text-center">Saturday</h3>
     <div>
-      <ScheduleItem time="08:30" title="First Tee-Off" important />
+      <ScheduleItem time="08:30" title="First Tee-Off" />
       <ScheduleItem time="16:00" title="Last Tee-Off" last />
     </div>
   </div>
