@@ -5,8 +5,7 @@
   const NEWS = [
     {
       title: '11/3: Qualify for the Copenhagen Open!',
-      description:
-        `Registration is open for the Copenhagen Open 2024 Qualification Tournament.
+      description: `Registration is open for the Copenhagen Open 2024 Qualification Tournament.
         Register now to get a chance to win a spot in the tournament.`,
       link: 'https://discgolfmetrix.com/2852767'
     },
@@ -17,24 +16,21 @@
   ];
 </script>
 
-<div class="space-y-4">
-  <div class="items-center 2xl:w-3/4 mx-auto">
-    <Carousel.Root
-      class="w-full"
-      opts={{ loop: true }}
-    >
+<div class="max-w-3xl mx-auto space-y-4">
+  <div class="items-center">
+    <Carousel.Root class="w-full" opts={{ loop: true }}>
       <Carousel.Content>
         {#each NEWS as entry}
           <Carousel.Item class="text-black select-none">
             <svelte:element
               this={entry.link ? 'a' : 'div'}
               href={entry.link}
-              class="flex w-full pb-12 items-center justify-between rounded-md bg-primary p-4 {entry.link &&
+              class="flex w-full items-center gap-4 justify-between rounded-md bg-primary p-4 {entry.link &&
                 'cursor-pointer hover:bg-primary/90'}"
             >
               <div>
                 <h2 class="text-xl font-bold unstyled md:text-3xl">{entry.title}</h2>
-                <p class="text-sm mb-12">{entry.description}</p>
+                <p class="mb-16 text-sm">{entry.description}</p>
               </div>
               <div>
                 {#if entry.link}
@@ -50,8 +46,8 @@
       <Carousel.Dots variant="secondary" />
     </Carousel.Root>
   </div>
-  <div class="2xl:w-1/2 mx-auto">
-    <h2>Welcome to the Copenhagen Open</h2>
+  <div>
+    <h1>Welcome to the Copenhagen Open</h1>
     <p>
       Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto incidunt tempora soluta
       eligendi exercitationem nam reprehenderit quas iste praesentium fuga at, veritatis consectetur
