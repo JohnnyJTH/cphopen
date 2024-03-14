@@ -67,6 +67,8 @@
     <p>
       Vi opfordrer alle tilskuere til at registrere sig og få en gratis billet til de(n) dag(e), hvor man ønsker at komme. Ved at få en billet har vi mulighed for at kontakte tilskuere ved vigtige hændelser, som f. eks. afbrydelser pga. farligt vejr. Man får ligeledes adgang til en app, hvor der er mere information omkring turneringen.
     </p>
-    <Button href="link her">Køb billetter her</Button>
+    <div class="mt-6">
+      <Button href="link her">Køb billetter her</Button>
+    </div>
   </div>
 </div>
