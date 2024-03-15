@@ -27,7 +27,7 @@
     <div class="space-y-2">
       <h2 class="text-2xl font-bold unstyled">Sponsorforespørgsler</h2>
       <p class="text-muted-foreground">
-        For sponsorforespørgsler, kontakt venligst vores sponsoransvarlige.
+        For sponsorforespørgsler, kontakt venligst vores sponsorteam.
       </p>
     </div>
     <div class="space-y-2">
@@ -36,6 +36,24 @@
         <Mail class="w-5 h-5" />
         <a href="mailto:sponsor@cphopen.dk" class="ml-3 underline text-primary"
           >sponsor@cphopen.dk</a
+        >
+      </div>
+    </div>
+  </div>
+  <div class="border-t border-gray-200" />
+  <div class="space-y-4">
+    <div class="space-y-2">
+      <h2 class="text-2xl font-bold unstyled">Pressekontakt</h2>
+      <p class="text-muted-foreground">
+        For pressehenvendelser, kontakt venligst vores pressechef Alexander Elverlund.
+      </p>
+    </div>
+    <div class="space-y-2">
+      <h3 class="text-xl font-bold unstyled">Email</h3>
+      <div class="flex items-center">
+        <Mail class="w-5 h-5" />
+        <a href="mailto:presse@cphopen.dk" class="ml-3 underline text-primary"
+          >presse@cphopen.dk</a
         >
       </div>
     </div>

@@ -36,10 +36,10 @@
         </Carousel.Item>
       {/each}
     </Carousel.Content>
-    <Carousel.Previous variant="secondary" />
+<!--    <Carousel.Previous variant="secondary" />
     <Carousel.Next variant="secondary" />
     <Carousel.Dots variant="secondary" />
-  </Carousel.Root>
+-->  </Carousel.Root>
   <div>
     <h2>Welcome to the Copenhagen Open</h2>
     <p>
@@ -47,9 +47,7 @@
       Tour Europe, Copenhagen Open 2024.
     </p>
     <p>
-      In the top menu you can find information regarding schedule, course layout and practical
-      information about the tournament regarding accommodation, food etc.<br />
-      This information will be published continuously, when it is set.
+      In the top menu you can find information about the schedule, course layout, accommodation, food - and the area map, guidelines during the rounds etc. This information will be published continuously, when it is set.
     </p>
     <p>We are delighted to be hosting you and the rest of the field!</p>
   </div>

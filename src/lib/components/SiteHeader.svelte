@@ -19,17 +19,17 @@
         {
           href: '/player/groups',
           label: 'Groups',
-          description: 'Groups for the next round.'
+          description: 'Groups for the next round'
         },
         {
           href: '/player/accomodation',
           label: 'Accomodation',
-          description: 'Accomodation options near the course.'
+          description: 'Accomodation options near the course'
         },
         {
           href: '/player/food',
           label: 'Food',
-          description: 'Food options during the tournament.'
+          description: 'Food options during the tournament'
         }
       ]
     },
@@ -40,32 +40,32 @@
         {
           href: '/player/map',
           label: 'Area map',
-          description: 'Map of the whole tournament area.'
+          description: 'Map of the whole tournament area'
         },
         {
           href: '/player/spotters',
           label: 'Spotters',
-          description: 'Spotters are your friends.'
+          description: 'Spotters are your friends'
         },
         {
           href: '/player/prize',
           label: 'Prize money',
-          description: 'Prize money table.'
+          description: 'Prize money table'
         },
         {
           href: '/player/scoring',
           label: 'Scoring',
-          description: 'Important information about scoring.'
+          description: 'Important information about scoring'
         },
         {
           href: '/player/ties',
           label: 'Ties',
-          description: 'Resolving first place ties.'
+          description: 'Resolving first place ties'
         },
         {
           href: '/player/contact',
           label: 'Contact info',
-          description: 'How to contact us.'
+          description: 'How to contact us'
         }
       ]
     }
@@ -81,32 +81,32 @@
         {
           href: '/publikum/banen',
           label: 'Banen',
-          description: 'Information om banen og hullerne.'
+          description: 'Information om banen og hullerne'
         },
         {
           href: '/publikum/grupper',
           label: 'Teetider',
-          description: 'Tidspunkter for de grupper, spillerne starter på'
+          description: 'Starttidspunkter for de enkelte grupper'
         },
         {
           href: '/publikum/program',
           label: 'Program',
-          description: 'Tidsplan for turneringsugen.'
+          description: 'Tidsplan for turneringsugen'
         },
         {
           href: '/publikum/aktiviteter',
           label: 'Aktiviteter',
-          description: 'Information om aktiviteter og konkurrencer.'
+          description: 'Information om aktiviteter og konkurrencer'
         },
         {
           href: '/publikum/resultater',
           label: 'Resultater',
-          description: 'Resultater fra turneringen.'
+          description: 'Daglige resultater fra turneringen'
         },
         {
           href: '/publikum/kontakt',
           label: 'Kontakt',
-          description: 'Kontakt os.'
+          description: 'Kontakt os'
         }
       ]
     }
