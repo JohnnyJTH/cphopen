@@ -67,7 +67,7 @@
     <p>
       Vi opfordrer alle tilskuere til at registrere sig og få en gratis billet til de(n) dag(e), hvor man ønsker at komme. Ved at få en billet har vi mulighed for at kontakte tilskuere ved vigtige hændelser, som f. eks. afbrydelser pga. farligt vejr. Man får ligeledes adgang til en app, hvor der er mere information omkring turneringen.
     </p>
-    <div class="mt-6 mb-6">
+    <div class="mt-6 pb-6">
       <Button href="https://sviby.com/en/e/vcv72y" target="_blank">Få billetter her</Button>
     </div>
   </div>
