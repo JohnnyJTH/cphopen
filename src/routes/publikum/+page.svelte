@@ -60,14 +60,14 @@
   <div class="flex flex-col">
     <h2>Europas største disc golf-turnering kommer igen forbi København</h2>
     <p>
-      Fra fredag den 10. maj til søndag den 12. maj 2024 spiller Europas bedste disc golf-spillere
+      Fra fredag den 10. maj til søndag den 12. maj 2024 spiller verdens bedste disc golf-spillere
       Copenhagen Open i Valbyparken. Den traditionsrige turnering er første stop på den nyetablerede
-      Disc Golf Pro Tour Europe.
+      Disc Golf Pro Tour - Europe.
     </p>
     <p>
-      Vi opfordrer alle tilskuere til at registrere sig og få en gratis billet til de(n) dag(e), hvor man ønsker at komme. Ved at få en billet har vi mulighed for at kontakte tilskuere ved vigtige hændelser, som f. eks. afbrydelser pga. farligt vejr. Man får ligeledes adgang til en app, hvor der er mere information omkring turneringen.
+      Vi opfordrer alle tilskuere til at registrere sig og få en gratis billet til de(n) dag(e), hvor man ønsker at komme. Ved at få en billet har vi mulighed for at kontakte jer ved vigtige hændelser, som f. eks. afbrydelser pga. farligt vejr. Man får ligeledes adgang til en app, hvor der er mere information omkring turneringen.
     </p>
-    <div class="mt-6 pb-6">
+    <div class="mt-6 mb-6">
       <Button href="https://sviby.com/en/e/vcv72y" target="_blank">Få billetter her</Button>
     </div>
   </div>
