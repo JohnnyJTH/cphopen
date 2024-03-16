@@ -172,14 +172,14 @@
               >
                 <Drawer.Close bind:el={drawerClose} />
                 <div class="flex-1 rounded-t-[10px] bg-background p-4">
-                  <div class="mx-auto h-1.5 w-12 flex-shrink-0 rounded-full bg-accent sm:mb-8" />
-                  <div class="flex flex-col gap-4 p-8 sm:gap-8">
+                  <div class="mx-auto h-1.5 w-12 flex-shrink-0 rounded-full bg-accent" />
+                  <div class="flex flex-col gap-2 p-2 xss:p-8 sm:gap-6">
                     {#each NAV_ITEMS as item}
                       <a
                         on:click={() => drawerClose.click()}
                         href={item.href}
                         class={cn(
-                          'font-mono text-3xl font-bold uppercase sm:text-5xl',
+                          'font-mono text-2xl font-bold uppercase xss:text-5xl',
                           decodeURI($page.url.pathname) === item.href &&
                             'text-primary underline underline-offset-8'
                         )}>{item.label}</a
@@ -187,7 +187,7 @@
                     {/each}
                     {#each SUBNAVS as subnav}
                       <div>
-                        <span class="font-mono text-2xl capitalize sm:text-4xl">{subnav.label}</span
+                        <span class="font-mono text-xl capitalize xss:text-4xl">{subnav.label}</span
                         >
                         <div class="grid grid-cols-2 gap-3 p-1 sm:grid-cols-3">
                           {#each subnav.items as item}
@@ -199,8 +199,8 @@
                                 $page.url.pathname === item.href && 'bg-accent/60 text-primary'
                               )}
                             >
-                              <div class="font-bold leading-none text-">{item.label}</div>
-                              <p class="text-sm leading-snug line-clamp-2 text-muted-foreground">
+                              <div class="text-sm font-bold leading-none sm:text-base">{item.label}</div>
+                              <p class="text-xs leading-snug sm:text-sm line-clamp-1 sm:line-clamp-2 text-muted-foreground">
                                 {item.description}
                               </p>
                             </a>
