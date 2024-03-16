@@ -173,7 +173,7 @@
                 <Drawer.Close bind:el={drawerClose} />
                 <div class="flex-1 rounded-t-[10px] bg-background p-4">
                   <div class="mx-auto h-1.5 w-12 flex-shrink-0 rounded-full bg-accent" />
-                  <div class="flex flex-col gap-2 p-2 sm:p-8 sm:gap-6">
+                  <div class="flex flex-col justify-between h-full p-6">
                     {#each NAV_ITEMS as item}
                       <a
                         on:click={() => drawerClose.click()}
