@@ -179,7 +179,7 @@
                         on:click={() => drawerClose.click()}
                         href={item.href}
                         class={cn(
-                          'sm:text-5xl font-mono text-2xl font-bold uppercase',
+                          'font-mono text-[4vh] sm:text-[5vh] font-bold uppercase',
                           decodeURI($page.url.pathname) === item.href &&
                             'text-primary underline underline-offset-8'
                         )}>{item.label}</a
@@ -187,8 +187,7 @@
                     {/each}
                     {#each SUBNAVS as subnav}
                       <div>
-                        <span class="font-mono text-xl capitalize sm:text-4xl">{subnav.label}</span
-                        >
+                        <span class="font-mono text-[2.5vh] sm:text-[4vh] capitalize">{subnav.label}</span>
                         <div class="grid grid-cols-2 gap-3 p-1 sm:grid-cols-3">
                           {#each subnav.items as item}
                             <a
