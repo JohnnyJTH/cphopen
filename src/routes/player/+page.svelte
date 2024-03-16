@@ -23,9 +23,9 @@
             class="flex h-full w-full items-center justify-between gap-4 rounded-md bg-primary p-4 {entry.link &&
               'cursor-pointer hover:bg-primary/90'}"
           >
-            <div>
+            <div class={NEWS.length > 1 ? 'mb-16' : ''}>
               <h2 class="text-xl font-bold unstyled md:text-3xl">{entry.title}</h2>
-              <p class="mb-16 text-sm">{entry.description}</p>
+              <p class="text-sm">{entry.description}</p>
             </div>
             <div>
               {#if entry.link}
@@ -36,10 +36,12 @@
         </Carousel.Item>
       {/each}
     </Carousel.Content>
-<!--    <Carousel.Previous variant="secondary" />
-    <Carousel.Next variant="secondary" />
-    <Carousel.Dots variant="secondary" />
--->  </Carousel.Root>
+    {#if NEWS.length > 1}
+      <Carousel.Previous variant="secondary" />
+      <Carousel.Next variant="secondary" />
+      <Carousel.Dots variant="secondary" />
+    {/if}
+  </Carousel.Root>
   <div>
     <h2>Welcome to the Copenhagen Open</h2>
     <p>
@@ -47,7 +49,9 @@
       Tour Europe, Copenhagen Open 2024.
     </p>
     <p>
-      In the top menu you can find information about the schedule, course layout, accommodation, food - and the area map, guidelines during the rounds etc. This information will be published continuously, when it is set.
+      In the top menu you can find information about the schedule, course layout, accommodation,
+      food - and the area map, guidelines during the rounds etc. This information will be published
+      continuously, when it is set.
     </p>
     <p>We are delighted to be hosting you and the rest of the field!</p>
   </div>
