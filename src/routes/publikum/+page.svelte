@@ -1,8 +1,10 @@
 <script lang="ts">
   import Autoplay from 'embla-carousel-autoplay';
-  import { Button } from '$lib/components/ui/button';
+  import { Button, buttonVariants } from '$lib/components/ui/button';
   import * as Carousel from '$lib/components/ui/carousel';
-  import { ChevronRight } from 'lucide-svelte';
+  import * as Dialog from '$lib/components/ui/dialog';
+  import { ChevronRight, HelpCircle } from 'lucide-svelte';
+  import { cn } from '$lib/utils';
 
   const CAROUSEL_ITEMS: { title: string; description: string; image: string; link?: string }[] = [
     {
@@ -13,7 +15,8 @@
     },
     {
       title: 'Valbyparken',
-      description: 'Turneringen løber af stablen på VERDENS mest spillede bane - nemlig vores egen Valbyparken Disc Golf Park. Det er vi meget stolte af.',
+      description:
+        'Turneringen løber af stablen på VERDENS mest spillede bane - nemlig vores egen Valbyparken Disc Golf Park. Det er vi meget stolte af.',
       image: '/images/ept2023_spectators1.jpg'
     }
   ];
@@ -35,12 +38,12 @@
             <svelte:element
               this={entry.link ? 'a' : 'div'}
               href={entry.link}
-              class="absolute top-4 flex w-3/4 items-center justify-between rounded-r-md bg-background/60 p-4 {entry.link &&
+              class="absolute top-4 hidden items-center justify-between rounded-r-md bg-background/60 p-4 sm:flex sm:w-3/4 {entry.link &&
                 'cursor-pointer hover:bg-background/80'}"
             >
               <div>
-                <h2 class="text-xl font-bold unstyled md:text-3xl">{entry.title}</h2>
-                <p class="!m-0 text-sm">{entry.description}</p>
+                <h2 class="unstyled text-[2vh] font-bold sm:text-xl md:text-3xl">{entry.title}</h2>
+                <p class="!m-0 text-[13.5px] sm:text-sm">{entry.description}</p>
               </div>
               <div>
                 {#if entry.link}
@@ -48,6 +51,22 @@
                 {/if}
               </div>
             </svelte:element>
+            <Dialog.Root>
+              <Dialog.Trigger
+                class={cn(
+                  buttonVariants({ variant: 'secondary', size: 'icon' }),
+                  'absolute bottom-3 ml-3 flex h-8 w-8 touch-manipulation rounded-full sm:hidden'
+                )}
+              >
+                <HelpCircle class="w-4 h-4" />
+              </Dialog.Trigger>
+              <Dialog.Content>
+                <Dialog.Header>
+                  <Dialog.Title>{entry.title}</Dialog.Title>
+                  <Dialog.Description>{entry.description}</Dialog.Description>
+                </Dialog.Header>
+              </Dialog.Content>
+            </Dialog.Root>
             <img src={entry.image} alt={entry.title} />
           </Carousel.Item>
         {/each}
@@ -65,7 +84,10 @@
       Disc Golf Pro Tour - Europe.
     </p>
     <p>
-      Vi opfordrer alle tilskuere til at registrere sig og få en gratis billet til de(n) dag(e), hvor man ønsker at komme. Ved at få en billet har vi mulighed for at kontakte jer ved vigtige hændelser, som f. eks. afbrydelser pga. farligt vejr. Man får ligeledes adgang til en app, hvor der er mere information omkring turneringen.
+      Vi opfordrer alle tilskuere til at registrere sig og få en gratis billet til de(n) dag(e),
+      hvor man ønsker at komme. Ved at få en billet har vi mulighed for at kontakte jer ved vigtige
+      hændelser, som f. eks. afbrydelser pga. farligt vejr. Man får ligeledes adgang til en app,
+      hvor der er mere information omkring turneringen.
     </p>
     <div class="mt-6 mb-6">
       <Button href="https://sviby.com/en/e/vcv72y" target="_blank">Få billetter her</Button>
