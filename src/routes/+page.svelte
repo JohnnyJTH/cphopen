@@ -13,8 +13,8 @@
   >
     <img src="/images/co2024-logo.png" class="w-96 sm:w-64 lg:w-32 xl:w-72 2xl:w-96" />
   </div>
-  <div class="relative flex flex-col h-full px-4 py-24 text-center md:px-16 md:py-32">
-    <div class="flex flex-col flex-auto gap-8 lg:flex-row">
+  <div class="relative flex flex-col h-full px-2 py-24 text-center md:px-16 md:py-32">
+    <div class="flex flex-col flex-auto gap-x-12 gap-y-4 lg:flex-row">
       <Button href="/publikum" variant="huge" size="huge">
         <Users strokeWidth="3" class="w-12 h-12 text-white lg:h-24 lg:w-24" />
         <h2 class="text-3xl text-white unstyled font-medium lg:text-5xl">Info til publikum</h2>
