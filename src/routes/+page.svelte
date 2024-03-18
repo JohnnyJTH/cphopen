@@ -8,7 +8,9 @@
   style="background-image: url(images/co2024-website_background.jpg)"
   class="-mb-16 -mt-16 h-screen w-screen bg-[''] bg-cover bg-center bg-no-repeat"
 >
-  <div>
+  <div
+    class="absolute z-10 -translate-x-1/2 -translate-y-1/2 left-1/2 top-[calc(50%+26px)]"
+  >
     <img src="/images/co2024-logo.png" class="w-96 sm:w-64 lg:w-32 xl:w-72 2xl:w-96" />
   </div>
   <div class="relative flex flex-col h-full px-8 py-24 text-center md:px-16 md:py-32">
