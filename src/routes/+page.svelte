@@ -11,7 +11,7 @@
   <div
     class="[clip-path:circle()] absolute z-10 -translate-x-1/2 -translate-y-1/2 left-1/2 top-[calc(50%+26px)]"
   >
-    <img src="/images/edgpt-co.png" class="w-96 sm:w-64 lg:w-32 xl:w-72 2xl:w-96" />
+    <img src="/images/co2024-logo" class="w-96 sm:w-64 lg:w-32 xl:w-72 2xl:w-96" />
   </div>
   <div class="relative flex flex-col h-full px-8 py-24 text-center md:px-16 md:py-32">
     <div class="flex flex-col flex-auto gap-8 lg:flex-row">
