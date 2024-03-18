@@ -135,7 +135,7 @@
   <div class="flex items-center w-full h-full page-container">
     <div class="flex justify-start {isHomePage ? 'max-lg:flex-1' : 'flex-1'}">
       <a href="/" class="flex items-center gap-2">
-        <img src="/images/co2024-logo_topleft.png" class="mt-8 fixed h-16" alt="DGPT Europe - Copenhagen Open 2024" />
+        <img src="/images/co2024-logo_topleft.png" class="mt-8 mr-8 h-16" alt="DGPT Europe - Copenhagen Open 2024" />
         {#if !isHomePage}
           <span class="text-xl font-bold leading-10 text-primary sm:text-2xl"
             >Copenhagen Open 2024</span
