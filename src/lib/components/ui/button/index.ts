@@ -15,6 +15,8 @@ const buttonVariants = tv({
 			link: "font-bold text-foreground underline-offset-4 hover:underline",
 			"link-active": "font-bold text-primary underline-offset-4 underline",
 			huge: "bg-background/50 text-black hover:bg-background/60 border border-2 border-background flex flex-col",
+			gray: "bg-gray-700 text-white border-4 border-gray-400 hover:border-secondary duration-300",
+			gray2: "bg-gray-700 hover:bg-secondary text-white border border-gray-400 hover:border-none duration-300",
 		},
 		size: {
 			default: "h-10 px-4 py-2",
