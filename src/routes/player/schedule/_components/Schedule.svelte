@@ -10,7 +10,7 @@
     </div>
     <div>
       <ScheduleItem time="08:00" title="Course open for practice" description="PRACTICE IS ONLY FOR PLAYERS WITH A SPOT IN THE MAIN TOURNAMENT!" />
-      <ScheduleItem time="16:30" title="Qualification Tournament" description="The qualification tournament is for registered players for this specific event. No other players are allowed to use the course from 16:30 on Monday!" />
+      <ScheduleItem time="16:30" title="Qualification Tournament" description="The qualification tournament is for registered players for this specific event. No other players are allowed to use the course from 16:30 on Monday!" last />
     </div>
   </div>
   <div class="space-y-4">
@@ -19,7 +19,7 @@
       <p class="font-mono text-sm leading-none text-muted-foreground unstyled">May 7th</p>
     </div>
     <div>
-      <ScheduleItem time="08:00" title="Course open for practice" description="PRACTICE IS ONLY FOR PLAYERS WITH A SPOT IN THE MAIN TOURNAMENT!" />
+      <ScheduleItem time="08:00" title="Course open for practice" description="PRACTICE IS ONLY FOR PLAYERS WITH A SPOT IN THE MAIN TOURNAMENT!" last />
     </div>
   </div>
   <div class="space-y-4">
@@ -29,7 +29,7 @@
     </div>
     <div>
       <ScheduleItem time="08:00" title="Course open for practice" description="PRACTICE IS ONLY FOR PLAYERS WITH A SPOT IN THE MAIN TOURNAMENT!" />
-      <ScheduleItem time="09:00-16:00" title="Course assets are set up" description="Course assets include circle 1 whiskers, tents and beach flags." />
+      <ScheduleItem time="09:00-16:00" title="Course assets are set up" description="Course assets include circle 1 whiskers, tents and beach flags." last />
     </div>
   </div>
   <div class="space-y-4">
@@ -39,7 +39,7 @@
     </div>
     <div>
       <ScheduleItem time="08:00" title="Course open for practice" description="PRACTICE IS ONLY FOR PLAYERS WITH A SPOT IN THE MAIN TOURNAMENT!" />
-      <ScheduleItem time="09:00-17:00" title="Practice area is set up" description="Includes fencing off some areas." />
+      <ScheduleItem time="09:00-17:00" title="Practice area is set up" description="Includes fencing off some areas." last />
     </div>
   </div>
   <div class="space-y-4">
@@ -48,8 +48,8 @@
       <p class="font-mono text-sm leading-none text-muted-foreground unstyled">May 10th</p>
     </div>
     <div>
-      <ScheduleItem time="08:30" title="First Tee-Off" important />
-      <ScheduleItem time="16:00" title="Last Tee-Off" />
+      <ScheduleItem time="08:30" title="First Tee-Off" />
+      <ScheduleItem time="16:00" title="Last Tee-Off" last />
     </div>
   </div>
   <div class="space-y-4">
@@ -59,7 +59,7 @@
     </div>
     <div>
       <ScheduleItem time="08:30" title="First Tee-Off" />
-      <ScheduleItem time="16:00" title="Last Tee-Off" />
+      <ScheduleItem time="16:00" title="Last Tee-Off" last />
     </div>
   </div>
   <div class="space-y-4">
