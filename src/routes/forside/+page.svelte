@@ -34,7 +34,7 @@
         href="/publikum"
         variant="default"
         size="huge"
-        class="group relative w-full !border border-accent bg-secondary/75 py-8 text-gray-400 backdrop-blur-md hover:border-8 hover:border-primary hover:bg-primary hover:text-white lg:pl-8 2xl:pl-16"
+        class="group relative w-full !border border-accent bg-secondary/50 py-8 text-gray-400 backdrop-blur-sm hover:!border-8 hover:border-primary hover:bg-secondary/50 hover:text-white lg:pl-8 2xl:pl-16"
       >
         <div class="absolute items-center hidden h-full mt-1 right-6 group-hover:hidden 2xl:flex">
           <ChevronRight class="size-16" />
