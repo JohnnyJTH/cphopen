@@ -9,16 +9,32 @@
   class="-mb-16 -mt-16 h-screen w-screen bg-[''] bg-cover bg-center bg-no-repeat"
 >
   <div class="flex h-[calc(100vh-4rem)] w-screen min-w-full flex-col bg-black/50 py-16">
-    <div class="flex justify-center pt-8 xl:pt-16">
-      <img src="/images/co2024-logo.png" class="size-[32vh] xl:size-[40vh]" />
+    <div class="pt-8 xl:pt-16">
+      <div class="flex items-center justify-between page-container lg:px-16">
+        <img src="/images/co2024-logo.png" class="size-[32vh] xl:size-[40vh]" />
+        <div class="hidden lg:block">
+          <h1
+            class="unstyled text-right text-[5vw] font-extrabold uppercase leading-[5vw] tracking-tight 2xl:text-9xl"
+          >
+            <span class="block text-primary">Copenhagen</span>
+            <span class="block text-secondary">Open</span>
+          </h1>
+          <p class="unstyled text-[5vw] 2xl:text-9xl font-extrabold uppercase leading-[5vw] tracking-tight">
+            <span class="block text-secondary">2024</span>
+            <span class="block text-primary">DGPT Europe</span>
+          </p>
+        </div>
+      </div>
     </div>
 
-    <div class="flex flex-col w-full gap-8 pt-10 max-lg:page-container lg:px-16 grow lg:flex-row lg:pt-16">
+    <div
+      class="flex flex-col w-full gap-8 pt-10 max-lg:page-container grow lg:flex-row lg:px-16 lg:pt-16"
+    >
       <Button
         href="/publikum"
         variant="default"
         size="huge"
-        class="group relative w-full !border border-gray-600 bg-[#212121] py-8 text-gray-400 hover:border-8 hover:border-primary hover:bg-primary hover:text-white lg:pl-8 2xl:pl-16"
+        class="group relative w-full !border border-accent bg-secondary/75 py-8 text-gray-400 backdrop-blur-md hover:border-8 hover:border-primary hover:bg-primary hover:text-white lg:pl-8 2xl:pl-16"
       >
         <div class="absolute items-center hidden h-full mt-1 right-6 group-hover:hidden 2xl:flex">
           <ChevronRight class="size-16" />
@@ -51,7 +67,7 @@
         href="/player"
         variant="default"
         size="huge"
-        class="group relative w-full !border border-gray-600 bg-[#212121] py-8 text-gray-400 hover:border-8 hover:border-primary hover:bg-primary hover:text-white lg:pl-8 2xl:pl-16"
+        class="group relative w-full !border border-accent bg-secondary/75 py-8 text-gray-400 backdrop-blur-md hover:border-8 hover:border-primary hover:bg-primary hover:text-white lg:pl-8 2xl:pl-16"
       >
         <div class="absolute items-center hidden h-full mt-1 right-6 group-hover:hidden 2xl:flex">
           <ChevronRight class="size-16" />
