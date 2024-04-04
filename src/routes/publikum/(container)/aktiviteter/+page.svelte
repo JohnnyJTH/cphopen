@@ -1,7 +1,7 @@
 <h1>Aktiviteter</h1>
 <p>
   Tilskuere er meget velkomne alle tre dage. Ud over at se spillerne konkurrere på banen vil det
-  også være muligt at prøve forskellige disc golf-relaterede aktiviteter og konkurrencer i nærheden af banen<!--: Lær
-  forskellige tricks, kast samt putts og vind præmier-->. Kig forbi turneringscentrum i teltet lige
+  også være muligt at prøve disc golf-relaterede aktiviteter i nærheden af banen i tidsrummet 10-15, fredag til søndag<!--: Lær
+  forskellige tricks, kast samt putts og vind præmier-->. Kig forbi kiosken ved turneringscentrum i teltene lige
   ved banen (hul 1 og 6) for at få mere information.
 </p>
