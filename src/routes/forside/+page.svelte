@@ -12,15 +12,15 @@
     <div class="hidden lg:block lg:pt-16">
       <div class="mx-auto flex max-w-[120rem] items-center justify-between lg:px-16">
         <img src="/images/co2024-logo.png" class="size-[32vh] xl:size-[40vh]" />
-        <div class="hidden lg:block">
+        <div class="hidden lg:block text-[7vw] xl:text-[6vw] font-extrabold uppercase leading-[6vw] xl:leading-[5vw] tracking-tight 3xl:text-9xl">
           <h1
-            class="unstyled text-right text-[7vw] font-extrabold uppercase leading-[5vw] tracking-tight 2xl:text-9xl"
+            class="text-right unstyled"
           >
             <span class="block text-primary">Copenhagen</span>
             <span class="block text-secondary">Open</span>
           </h1>
           <p
-            class="unstyled text-[7vw] font-extrabold uppercase leading-[5vw] tracking-tight 2xl:text-9xl"
+            class="unstyled"
           >
             <span class="block text-secondary">2024</span>
             <span class="block text-primary">DGPT Europe</span>

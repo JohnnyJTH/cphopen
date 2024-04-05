@@ -12,6 +12,9 @@ const config = {
 			}
 		},
 		extend: {
+			screens: {
+				"3xl": "2000px"
+			},
 			colors: {
 				border: "hsl(var(--border) / <alpha-value>)",
 				input: "hsl(var(--input) / <alpha-value>)",
