@@ -3,11 +3,13 @@
   import { Button } from './ui/button';
   import { page } from '$app/stores';
   import { onMount } from 'svelte';
-  import { slide } from 'svelte/transition';
+  import { fade, slide } from 'svelte/transition';
 
   let year = new Date().getFullYear();
 
   $: isHomePage = $page.url.pathname === '/forside';
+  let windowWidth: number;
+  $: isMobile = windowWidth < 1024;
 
   let rotationIndex = 0;
   let interval: number;
@@ -17,7 +19,13 @@
     }, 5000);
     return () => clearInterval(interval);
   });
+
+  const customTransition = (node: HTMLElement, { delay = 0 } = {}) => {
+    return isMobile ? fade(node, { delay }) : slide(node, { delay });
+  };
 </script>
+
+<svelte:window bind:innerWidth={windowWidth} />
 
 <footer
   id="footer"
@@ -27,21 +35,37 @@
 >
   <div class="flex flex-row items-center justify-between w-full h-full page-container">
     {#if rotationIndex === 0}
-      <span in:slide={{ delay: 400 }} out:slide class="text-muted-foreground"
-        >© {year} KFK Disc Golf</span
-      >
+      {#await new Promise((resolve) => setTimeout(resolve, 400))}
+        <div class="w-1 h-1 bg-transparent" />
+      {:then}
+        <span in:customTransition out:customTransition class="text-muted-foreground"
+          >© {year} KFK Disc Golf</span
+        >
+      {/await}
     {:else if rotationIndex === 1}
-      <span in:slide={{ delay: 400 }} out:slide class="text-muted-foreground"
-        >© {year} KFK Disc Golf</span
-      >
+      {#await new Promise((resolve) => setTimeout(resolve, 400))}
+        <div class="w-1 h-1 bg-transparent" />
+      {:then}
+        <span in:customTransition out:customTransition class="text-muted-foreground"
+          >© {year} KFK Disc Golf</span
+        >
+      {/await}
     {:else if rotationIndex === 2}
-      <span in:slide={{ delay: 400 }} out:slide class="text-muted-foreground"
-        >© {year} KFK Disc Golf</span
-      >
+      {#await new Promise((resolve) => setTimeout(resolve, 400))}
+        <div class="w-1 h-1 bg-transparent" />
+      {:then}
+        <span in:customTransition out:customTransition class="text-muted-foreground"
+          >© {year} KFK Disc Golf</span
+        >
+      {/await}
     {:else}
-      <span in:slide={{ delay: 400 }} out:slide class="text-muted-foreground"
-        >© {year} KFK Disc Golf</span
-      >
+      {#await new Promise((resolve) => setTimeout(resolve, 400))}
+        <div class="sr-only" />
+      {:then}
+        <span in:customTransition out:customTransition class="text-muted-foreground"
+          >© {year} KFK Disc Golf</span
+        >
+      {/await}
     {/if}
     <ul class="flex flex-wrap items-center text-sm font-medium">
       <li>
