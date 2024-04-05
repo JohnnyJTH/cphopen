@@ -20,6 +20,7 @@
           <svelte:element
             this={entry.link ? 'a' : 'div'}
             href={entry.link}
+            target={entry.link && entry.link.startsWith('http') ? '_blank' : undefined}
             class="flex h-full w-full items-center justify-between gap-4 rounded-md bg-primary p-4 {entry.link &&
               'cursor-pointer hover:bg-primary/90'}"
           >
