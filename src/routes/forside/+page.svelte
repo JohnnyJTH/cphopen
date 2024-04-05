@@ -10,7 +10,7 @@
 >
   <div class="flex h-[calc(100vh-4rem)] w-screen min-w-full flex-col bg-black/50 pt-16">
     <div class="hidden 2xl:block 2xl:pt-16">
-      <div class="flex items-center justify-between page-container lg:px-16">
+      <div class="mx-auto flex max-w-[120rem] items-center justify-between lg:px-16">
         <img src="/images/co2024-logo.png" class="size-[32vh] xl:size-[40vh]" />
         <div class="hidden lg:block">
           <h1
@@ -27,6 +27,12 @@
           </p>
         </div>
       </div>
+    </div>
+
+    <div
+      class="absolute z-10 -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2 lg:hidden"
+    >
+      <img src="/images/co2024-logo.png" class="w-[30vh]" />
     </div>
 
     <div
