@@ -60,7 +60,7 @@
       {/await}
     {:else}
       {#await new Promise((resolve) => setTimeout(resolve, 400))}
-        <div class="sr-only" />
+        <div class="w-1 h-1 bg-transparent" />
       {:then}
         <span in:customTransition out:customTransition class="text-muted-foreground"
           >© {year} KFK Disc Golf</span
