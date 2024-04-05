@@ -2,29 +2,45 @@
   import { Facebook, Instagram, TicketPercent } from 'lucide-svelte';
   import { Button } from './ui/button';
   import { page } from '$app/stores';
+  import { onMount } from 'svelte';
+  import { slide } from 'svelte/transition';
 
   let year = new Date().getFullYear();
 
-  $: isHomePage = $page.url.pathname === '/forside'
+  $: isHomePage = $page.url.pathname === '/forside';
+
+  let showSponsors = true;
+  let interval: number;
+  onMount(() => {
+    interval = setInterval(() => {
+      showSponsors = !showSponsors;
+    }, 5000);
+    return () => clearInterval(interval);
+  });
 </script>
 
 <footer
   id="footer"
-  class="h-16 border-t border-accent bg-background/75 backdrop-blur-md {$page.url.pathname === '/'
+  class="h-16 border-t border-accent bg-background/75 backdrop-blur-md {isHomePage
     ? 'sticky bottom-0'
     : 'bg-popover/75'}"
 >
   <div class="flex flex-row items-center justify-between w-full h-full page-container">
-    {#if isHomePage}
-      <div class="space-x-8 text-xl lg:space-x-16">
+    {#if showSponsors}
+      <div in:slide={{ delay: 400 }} out:slide class="space-x-8 text-xl lg:space-x-16">
         <span>Sponsor 1</span>
         <span>Sponsor 2</span>
         <span>Sponsor 3</span>
       </div>
     {:else}
-      <span class="text-muted-foreground md:text-center">© {year} KFK Disc Golf</span>
+      <span in:slide={{ delay: 400 }} out:slide class="text-muted-foreground"
+        >© {year} KFK Disc Golf</span
+      >
     {/if}
-    <ul class="flex flex-wrap items-center text-sm font-medium md:mt-0 {isHomePage && 'hidden sm:flex'}">
+    <ul
+      class="flex flex-wrap items-center text-sm font-medium md:mt-0 {isHomePage &&
+        'hidden sm:flex'}"
+    >
       <li>
         <Button
           title="Facebook"
