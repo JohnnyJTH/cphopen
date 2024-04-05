@@ -9,18 +9,18 @@
   class="-mb-16 -mt-16 h-screen w-screen bg-[''] bg-cover bg-center bg-no-repeat"
 >
   <div class="flex h-[calc(100vh-4rem)] w-screen min-w-full flex-col bg-black/50 pt-16">
-    <div class="hidden 2xl:block 2xl:pt-16">
+    <div class="hidden lg:block lg:pt-16">
       <div class="mx-auto flex max-w-[120rem] items-center justify-between lg:px-16">
         <img src="/images/co2024-logo.png" class="size-[32vh] xl:size-[40vh]" />
         <div class="hidden lg:block">
           <h1
-            class="unstyled text-right text-[5vw] font-extrabold uppercase leading-[5vw] tracking-tight 2xl:text-9xl"
+            class="unstyled text-right text-[7vw] font-extrabold uppercase leading-[5vw] tracking-tight 2xl:text-9xl"
           >
             <span class="block text-primary">Copenhagen</span>
             <span class="block text-secondary">Open</span>
           </h1>
           <p
-            class="unstyled text-[5vw] font-extrabold uppercase leading-[5vw] tracking-tight 2xl:text-9xl"
+            class="unstyled text-[7vw] font-extrabold uppercase leading-[5vw] tracking-tight 2xl:text-9xl"
           >
             <span class="block text-secondary">2024</span>
             <span class="block text-primary">DGPT Europe</span>
