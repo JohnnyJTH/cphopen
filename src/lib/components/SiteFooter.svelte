@@ -9,11 +9,11 @@
 
   $: isHomePage = $page.url.pathname === '/forside';
 
-  let showSponsors = true;
+  let rotationIndex = 0;
   let interval: number;
   onMount(() => {
     interval = setInterval(() => {
-      showSponsors = !showSponsors;
+      rotationIndex = rotationIndex === 3 ? 0 : rotationIndex + 1;
     }, 5000);
     return () => clearInterval(interval);
   });
@@ -26,21 +26,24 @@
     : 'bg-popover/75'}"
 >
   <div class="flex flex-row items-center justify-between w-full h-full page-container">
-    {#if showSponsors}
-      <div in:slide={{ delay: 400 }} out:slide class="space-x-8 text-xl lg:space-x-16">
-        <span>Sponsor 1</span>
-        <span>Sponsor 2</span>
-        <span>Sponsor 3</span>
-      </div>
+    {#if rotationIndex === 0}
+      <span in:slide={{ delay: 400 }} out:slide class="text-muted-foreground"
+        >© {year} KFK Disc Golf</span
+      >
+    {:else if rotationIndex === 1}
+      <span in:slide={{ delay: 400 }} out:slide class="text-muted-foreground"
+        >© {year} KFK Disc Golf</span
+      >
+    {:else if rotationIndex === 2}
+      <span in:slide={{ delay: 400 }} out:slide class="text-muted-foreground"
+        >© {year} KFK Disc Golf</span
+      >
     {:else}
       <span in:slide={{ delay: 400 }} out:slide class="text-muted-foreground"
         >© {year} KFK Disc Golf</span
       >
     {/if}
-    <ul
-      class="flex flex-wrap items-center text-sm font-medium md:mt-0 {isHomePage &&
-        'hidden sm:flex'}"
-    >
+    <ul class="flex flex-wrap items-center text-sm font-medium">
       <li>
         <Button
           title="Facebook"
