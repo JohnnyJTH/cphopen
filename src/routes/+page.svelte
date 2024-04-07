@@ -27,9 +27,9 @@
       </div>
     </div>
 
-    <div
-      class="absolute bottom-0 left-0 right-0 top-0 z-10 bg-[url('/images/co2024-logo.png')] bg-[length:28dvh] bg-center bg-no-repeat lg:hidden"
-    />
+<div class="absolute z-10 -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2 lg:hidden">
+      <img src="/images/co2024-logo.png" class="w-[30dvh]" />
+    </div>
 
     <div
       class="flex flex-col w-full gap-8 py-10 max-2xl:page-container grow lg:flex-row lg:py-16 2xl:px-16"
