@@ -6,7 +6,7 @@
   import { cn } from '$lib/utils';
 
   let drawerClose: HTMLButtonElement;
-  $: isHomePage = $page.url.pathname === '/' || $page.url.pathname === '/forside';
+  $: isHomePage = $page.url.pathname === '/';
 
   const PLAYER_LINKS = [
     { href: '/player', label: 'Home' },
