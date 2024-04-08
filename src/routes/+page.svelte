@@ -20,45 +20,29 @@
         href="/publikum"
         variant="default"
         size="huge"
-        class="relative w-full py-8 text-gray-400 border group border-accent bg-secondary/60 backdrop-blur-sm hover:border-primary hover:bg-primary hover:text-white lg:pl-8 2xl:pl-16"
+        class="relative w-full py-8 text-gray-400 border lg:justify-start group border-accent bg-secondary/60 backdrop-blur-sm hover:border-primary hover:bg-primary hover:text-white lg:pl-8 2xl:pl-16"
       >
-        <div class="absolute items-center hidden h-full mt-1 right-6 group-hover:hidden 2xl:flex">
-          <ChevronRight class="size-16" />
-        </div>
-
-        <div
-          class="flex flex-[1] transition-all duration-[400ms] lg:flex-[0] xl:group-hover:flex-[1]"
-        />
-
         <div class="flex items-center gap-4 w-fit">
           <Users strokeWidth="3" class="size-12 sm:size-16 2xl:size-[4vw]" />
-          <span class="text-[8vw] uppercase sm:text-[2.5rem] lg:pr-12 xl:text-[4vw] 2xl:-translate-y-1"
+          <span
+            class="text-[8vw] uppercase sm:text-[2.5rem] lg:pr-12 xl:text-[4vw] 2xl:-translate-y-1"
             >Til publikum</span
           >
         </div>
-        <div class="flex-[1] transition-[flex] duration-1000" />
       </Button>
 
       <Button
         href="/player"
         variant="default"
         size="huge"
-        class="relative w-full py-8 text-gray-400 border group border-accent bg-secondary/60 backdrop-blur-sm hover:border-primary hover:bg-primary hover:text-white lg:pr-8 2xl:pr-16"
+        class="relative w-full py-8 text-gray-400 border lg:justify-end group border-accent bg-secondary/60 backdrop-blur-sm hover:border-primary hover:bg-primary hover:text-white lg:pr-8 2xl:pr-16"
       >
-        <div class="absolute items-center hidden h-full mt-1 right-6 group-hover:hidden 2xl:flex">
-          <ChevronRight class="size-16" />
-        </div>
-
-        <div class="flex-[1] transition-[flex] duration-1000" />
         <div class="flex items-center gap-4 w-fit">
           <User strokeWidth="3" class="size-12 sm:size-16 2xl:size-[4vw]" />
           <span class="text-[8vw] uppercase sm:text-[2.5rem] xl:text-[4vw] 2xl:-translate-y-1"
-          >For Players</span
+            >For Players</span
           >
         </div>
-        <div
-          class="flex flex-[1] transition-all duration-[400ms] lg:flex-[0] xl:group-hover:flex-[1]"
-        />
       </Button>
     </div>
   </div>
