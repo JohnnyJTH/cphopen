@@ -10,7 +10,7 @@
 >
   <div class="flex h-[calc(100dvh-4rem)] w-screen min-w-full flex-col bg-black/50 pt-16">
     <div class="absolute z-10 -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2">
-      <img src="/images/co2024-logo.png" class="w-[30dvh] lg:w-[40dvh]" />
+      <img src="/images/co2024-logo.png" class="w-[30dvh] lg:w-[20dvw]" />
     </div>
 
     <div
@@ -27,7 +27,7 @@
         </div>
 
         <div
-          class="flex flex-[1] transition-all duration-[400ms] lg:flex-[0] lg:group-hover:flex-[1]"
+          class="flex flex-[1] transition-all duration-[400ms] lg:flex-[0] xl:group-hover:flex-[1]"
         />
 
         <div class="flex items-center gap-4 w-fit">
@@ -57,7 +57,7 @@
           >
         </div>
         <div
-          class="flex flex-[1] transition-all duration-[400ms] lg:flex-[0] lg:group-hover:flex-[1]"
+          class="flex flex-[1] transition-all duration-[400ms] lg:flex-[0] xl:group-hover:flex-[1]"
         />
       </Button>
     </div>
