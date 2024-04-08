@@ -20,12 +20,11 @@
         href="/publikum"
         variant="default"
         size="huge"
-        class="relative w-full py-8 text-gray-400 border lg:justify-start group border-accent bg-secondary/60 backdrop-blur-sm hover:border-primary hover:bg-primary hover:text-white lg:pl-8 2xl:pl-16"
+        class="relative w-full py-8 text-gray-400 border group border-accent bg-secondary/60 backdrop-blur-sm hover:border-primary hover:bg-primary hover:text-white lg:justify-start lg:pl-8 2xl:pl-16"
       >
-        <div class="flex items-center gap-4 w-fit">
-          <Users strokeWidth="3" class="size-12 sm:size-16 2xl:size-[4vw]" />
-          <span
-            class="text-[8vw] uppercase sm:text-[2.5rem] lg:pr-12 xl:text-[4vw] 2xl:-translate-y-1"
+        <div class="flex items-center gap-4 2xl:flex-col 2xl:gap-8 2xl:pl-[3vw]">
+          <Users strokeWidth="3" class="size-12 sm:size-16 2xl:size-[6vw]" />
+          <span class="text-[8vw] uppercase sm:text-[2.5rem] xl:text-[4vw] 2xl:-translate-y-1"
             >Til publikum</span
           >
         </div>
@@ -35,12 +34,12 @@
         href="/player"
         variant="default"
         size="huge"
-        class="relative w-full py-8 text-gray-400 border lg:justify-end group border-accent bg-secondary/60 backdrop-blur-sm hover:border-primary hover:bg-primary hover:text-white lg:pr-8 2xl:pr-16"
+        class="relative w-full py-8 text-gray-400 border group border-accent bg-secondary/60 backdrop-blur-sm hover:border-primary hover:bg-primary hover:text-white lg:justify-end lg:pr-8 2xl:pr-16"
       >
-        <div class="flex items-center gap-4 w-fit">
-          <User strokeWidth="3" class="size-12 sm:size-16 2xl:size-[4vw]" />
+        <div class="flex items-center gap-4 2xl:flex-col 2xl:gap-8 2xl:pr-[3vw]">
+          <User strokeWidth="3" class="size-12 sm:size-16 2xl:size-[6vw]" />
           <span class="text-[8vw] uppercase sm:text-[2.5rem] xl:text-[4vw] 2xl:-translate-y-1"
-            >For Players</span
+            >For players</span
           >
         </div>
       </Button>
