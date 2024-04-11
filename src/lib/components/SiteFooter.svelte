@@ -20,8 +20,8 @@
     return () => clearInterval(interval);
   });
 
-  const customTransition = (node: HTMLElement, { delay = 0 } = {}) => {
-    return isMobile ? fade(node, { delay }) : slide(node, { delay });
+  const customTransition = (node: HTMLElement) => {
+    return isMobile ? fade(node) : slide(node);
   };
 </script>
 
@@ -38,25 +38,25 @@
       {#await new Promise((resolve) => setTimeout(resolve, 400))}
         <div class="w-1 h-1 bg-transparent" />
       {:then}
-        <span in:customTransition out:customTransition class="text-muted-foreground"
-          >© {year} KFK Disc Golf</span
-        >
+        <div in:customTransition out:customTransition>
+          <img src="/images/discraft.jpg" class="h-12" alt="Discraft" />
+        </div>
       {/await}
     {:else if rotationIndex === 1}
       {#await new Promise((resolve) => setTimeout(resolve, 400))}
         <div class="w-1 h-1 bg-transparent" />
       {:then}
-        <span in:customTransition out:customTransition class="text-muted-foreground"
-          >© {year} KFK Disc Golf</span
-        >
+        <div in:customTransition out:customTransition>
+          <img src="/images/prodigy.jpg" class="h-12" alt="Discraft" /> 
+        </div>
       {/await}
     {:else if rotationIndex === 2}
       {#await new Promise((resolve) => setTimeout(resolve, 400))}
         <div class="w-1 h-1 bg-transparent" />
       {:then}
-        <span in:customTransition out:customTransition class="text-muted-foreground"
-          >© {year} KFK Disc Golf</span
-        >
+        <div in:customTransition out:customTransition>
+          <img src="/images/discconnection.png" class="h-12" alt="Disc Connection" />  
+        </div>
       {/await}
     {:else}
       {#await new Promise((resolve) => setTimeout(resolve, 400))}
