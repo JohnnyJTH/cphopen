@@ -15,7 +15,7 @@
   let interval: number;
   onMount(() => {
     interval = setInterval(() => {
-      rotationIndex = rotationIndex === 3 ? 0 : rotationIndex + 1;
+      rotationIndex = rotationIndex === 4 ? 0 : rotationIndex + 1;
     }, 5000);
     return () => clearInterval(interval);
   });
@@ -39,7 +39,7 @@
         <div class="w-1 h-1 bg-transparent" />
       {:then}
         <div in:customTransition out:customTransition>
-          <img src="/images/discraft.jpg" class="h-12" alt="Discraft" />
+          <img src="/images/discraft.jpg" class="h-14" alt="Discraft" />
         </div>
       {/await}
     {:else if rotationIndex === 1}
@@ -47,10 +47,18 @@
         <div class="w-1 h-1 bg-transparent" />
       {:then}
         <div in:customTransition out:customTransition>
-          <img src="/images/prodigy.jpg" class="h-12" alt="Discraft" /> 
+          <img src="/images/prodigy.jpg" class="h-14" alt="Prodigy" /> 
         </div>
       {/await}
     {:else if rotationIndex === 2}
+      {#await new Promise((resolve) => setTimeout(resolve, 400))}
+        <div class="w-1 h-1 bg-transparent" />
+      {:then}
+        <div in:customTransition out:customTransition>
+          <img src="/images/frellsen.png" class="h-8" alt="Frellsen" />  
+        </div>
+      {/await}
+    {:else if rotationIndex === 3}
       {#await new Promise((resolve) => setTimeout(resolve, 400))}
         <div class="w-1 h-1 bg-transparent" />
       {:then}
