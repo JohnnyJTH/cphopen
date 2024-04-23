@@ -1,2 +1,3 @@
 <h1>Food</h1>
-<p>This page is under construction</p>
+<p>A food truck with various dishes (burger, sausage, skewers, "Flæskestegs"-sandwich etc.), and reasonable prices, will be available at the tournament center. Pizzeria, sushi and other options are available down the road from the main entrance to the park (Hammelstrupvej + Mozartsvej).<br><br>
+In our own tournament center kiosk you can also buy soft drinks, chocolate bars and other snacks - and as always, we offer FREE coffee :-). Please note, that in the tournament center kiosk we will only accept cards and MobilePay (hopefully also for Norwegians and Finns, if the solution is ready) - NO CASH - this year.</p>
