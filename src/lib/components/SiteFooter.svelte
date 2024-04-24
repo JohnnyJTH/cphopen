@@ -71,7 +71,7 @@
         <div class="w-1 h-1 bg-transparent" />
       {:then}
         <div in:customTransition out:customTransition>
-          <img src="/images/føtex-logo_transp.png" class="h-8" alt="Føtex" />  
+          <img src="/images/føtex-logo_transp.png" class="h-10" alt="Føtex" />  
         </div>
       {/await}
     {:else}
