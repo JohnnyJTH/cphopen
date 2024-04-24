@@ -19,7 +19,8 @@
       <p class="font-mono text-sm leading-none text-muted-foreground unstyled">May 7th</p>
     </div>
     <div>
-      <ScheduleItem time="08:00" title="Course open for practice" description="PRACTICE IS ONLY FOR PLAYERS WITH A SPOT IN THE MAIN TOURNAMENT!" last />
+      <ScheduleItem time="08:00" title="Course open for practice" description="PRACTICE IS ONLY FOR PLAYERS WITH A SPOT IN THE MAIN TOURNAMENT!" />
+      <ScheduleItem time="17:00-18:00" title="Clinic with Paul Ulibarri" description="Privately arranged clinic - register here: https://kjdisc.com/products/clinics-featuring-paul-ulibarri" last />
     </div>
   </div>
   <div class="space-y-4">

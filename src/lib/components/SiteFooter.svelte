@@ -63,7 +63,15 @@
         <div class="w-1 h-1 bg-transparent" />
       {:then}
         <div in:customTransition out:customTransition>
-          <img src="/images/discconnection.png" class="h-12" alt="Disc Connection" />  
+          <img src="/images/discconnection.png" class="h-8" alt="Disc Connection" />  
+        </div>
+      {/await}
+    {:else if rotationIndex === 4}
+      {#await new Promise((resolve) => setTimeout(resolve, 400))}
+        <div class="w-1 h-1 bg-transparent" />
+      {:then}
+        <div in:customTransition out:customTransition>
+          <img src="/images/føtex-logo_transp.png" class="h-14" alt="Føtex" />  
         </div>
       {/await}
     {:else}
