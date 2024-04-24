@@ -11,7 +11,7 @@
         <a
           href={item.href}
           class={cn(
-            'block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent/60 hover:text-primary',
+            'unstyled block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent/60 hover:text-primary',
             $page.url.pathname === item.href && 'bg-accent/60 text-primary'
           )}
         >

@@ -134,7 +134,7 @@
 >
   <div class="flex items-center w-full h-full page-container">
     <div class="flex justify-start {isHomePage ? 'max-lg:flex-1' : 'flex-1'}">
-      <a href="/" class="flex items-center gap-2">
+      <a href="/" class="flex items-center gap-2 unstyled">
         <img src="/images/co2024-logo_topleft.png" class="h-12 mr-4" alt="DGPT Europe - Copenhagen Open 2024" />
         {#if !isHomePage}
           <span class="text-xl font-bold leading-10 text-primary sm:text-2xl"
@@ -149,7 +149,7 @@
           {#each NAV_ITEMS as item}
             <a
               href={item.href}
-              class={`flex items-center gap-1 rounded-md px-3 py-1.5 transition-colors ${
+              class={`unstyled flex items-center gap-1 rounded-md px-3 py-1.5 transition-colors ${
                 decodeURI($page.url.pathname) === item.href
                   ? 'text-primary underline underline-offset-4'
                   : 'text-foreground hover:text-primary'
@@ -179,7 +179,7 @@
                         on:click={() => drawerClose.click()}
                         href={item.href}
                         class={cn(
-                          'font-mono text-[4vh] sm:text-[5vh] font-bold uppercase',
+                          'unstyled font-mono text-[4vh] sm:text-[5vh] font-bold uppercase',
                           decodeURI($page.url.pathname) === item.href &&
                             'text-primary underline underline-offset-8'
                         )}>{item.label}</a
@@ -194,7 +194,7 @@
                               on:click={() => drawerClose.click()}
                               href={item.href}
                               class={cn(
-                                'block select-none space-y-1 rounded-md bg-accent/60 p-3 leading-none no-underline outline-none transition-colors hover:bg-accent/40 hover:text-primary',
+                                'unstyled block select-none space-y-1 rounded-md bg-accent/60 p-3 leading-none no-underline outline-none transition-colors hover:bg-accent/40 hover:text-primary',
                                 $page.url.pathname === item.href && 'bg-accent/60 text-primary'
                               )}
                             >

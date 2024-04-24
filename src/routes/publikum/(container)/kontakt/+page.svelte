@@ -9,15 +9,15 @@
       <div class="space-y-2">
         <h3 class="text-xl font-bold unstyled">Email</h3>
         <div class="flex items-center">
-          <Mail class="w-5 h-5" />
-          <a href="mailto:sf@cphopen.dk" class="ml-3 underline text-primary">sf@cphopen.dk</a>
+          <Mail class="size-6" />
+          <a href="mailto:sf@cphopen.dk" class="ml-3">sf@cphopen.dk</a>
         </div>
       </div>
       <div class="space-y-2">
         <h3 class="text-xl font-bold unstyled">Mobil</h3>
         <div class="flex items-center">
-          <Phone class="w-5 h-5" />
-          <a href="tel:+4526156819" class="ml-3 underline text-primary">+45 26 15 68 19</a>
+          <Phone class="size-6" />
+          <a href="tel:+4526156819" class="ml-3">+45 26 15 68 19</a>
         </div>
       </div>
     </div>
@@ -33,8 +33,8 @@
     <div class="space-y-2">
       <h3 class="text-xl font-bold unstyled">Email</h3>
       <div class="flex items-center">
-        <Mail class="w-5 h-5" />
-        <a href="mailto:sponsor@cphopen.dk" class="ml-3 underline text-primary"
+        <Mail class="size-6" />
+        <a href="mailto:sponsor@cphopen.dk" class="ml-3"
           >sponsor@cphopen.dk</a
         >
       </div>
@@ -51,8 +51,8 @@
     <div class="space-y-2">
       <h3 class="text-xl font-bold unstyled">Email</h3>
       <div class="flex items-center">
-        <Mail class="w-5 h-5" />
-        <a href="mailto:presse@cphopen.dk" class="ml-3 underline text-primary"
+        <Mail class="size-6" />
+        <a href="mailto:presse@cphopen.dk" class="ml-3"
           >presse@cphopen.dk</a
         >
       </div>
