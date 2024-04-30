@@ -19,8 +19,8 @@
       <p class="font-mono text-sm leading-none text-muted-foreground unstyled">May 7th</p>
     </div>
     <div>
-      <ScheduleItem time="09:00" title="Course open for practice" description="PRACTICE ONLY FOR MAIN TOURNAMENT PLAYERS! Register here for tee-time: https://tinyurl.com/co24-pr-tu" />
-      <ScheduleItem time="17:00-18:00" title="Clinic with Paul Ulibarri" description="Privately arranged clinic - register here: https://tinyurl.com/co24-uli" last />
+      <ScheduleItem time="09:00" title="Course open for practice" description="PRACTICE ONLY FOR MAIN TOURNAMENT PLAYERS! <a href='https://tinyurl.com/co24-pr-tu' target='_blank'>Register for a tee-time here</a>" />
+      <ScheduleItem time="17:00-18:00" title="Clinic with Paul Ulibarri" description="Privately arranged clinic. <a class='block' href='https://tinyurl.com/co24-uli' target='_blank'>Register here</a>" last />
     </div>
   </div>
   <div class="space-y-4">
@@ -29,7 +29,7 @@
       <p class="font-mono text-sm leading-none text-muted-foreground unstyled">May 8th</p>
     </div>
     <div>
-      <ScheduleItem time="09:00" title="Course open for practice" description="PRACTICE ONLY FOR MAIN TOURNAMENT PLAYERS! Register here for tee-time: https://tinyurl.com/co24-pr-we" />
+      <ScheduleItem time="09:00" title="Course open for practice" description="PRACTICE ONLY FOR MAIN TOURNAMENT PLAYERS! <a href='https://tinyurl.com/co24-pr-we' target='_blank'>Register for a tee-time here</a>" />
       <ScheduleItem time="09:00-18:00" title="Course assets are set up" description="Course assets include circle 1 and 2 whiskers, tents and beach flags." last />
     </div>
   </div>
@@ -39,7 +39,7 @@
       <p class="font-mono text-sm leading-none text-muted-foreground unstyled">May 9th</p>
     </div>
     <div>
-      <ScheduleItem time="09:00" title="Course open for practice" description="PRACTICE ONLY FOR MAIN TOURNAMENT PLAYERS! Register here for tee-time: https://tinyurl.com/co24-pr-th" />
+      <ScheduleItem time="09:00" title="Course open for practice" description="PRACTICE ONLY FOR MAIN TOURNAMENT PLAYERS! <a href='https://tinyurl.com/co24-pr-th' target='_blank'>Register for a tee-time here</a>" />
       <ScheduleItem time="09:00-17:00" title="Practice area is set up" description="Includes fencing off some areas." />
       <ScheduleItem time="15:00-17:00" title="Press Conference" last />
     </div>

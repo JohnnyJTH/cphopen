@@ -12,7 +12,7 @@
   <div class="flex-1 space-y-3 {!last && 'pb-12'}">
     <h4 class="text-xl font-bold {important && 'text-primary'}">{title}</h4>
     <p class={important ? 'text-white' : 'text-muted-foreground'}>
-      {description}
+      {@html description}
     </p>
   </div>
 </div>
