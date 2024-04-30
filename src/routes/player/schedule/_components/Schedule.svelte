@@ -9,7 +9,7 @@
       <p class="font-mono text-sm leading-none text-muted-foreground unstyled">May 6th</p>
     </div>
     <div>
-      <ScheduleItem time="08:00" title="Course open for practice" description="PRACTICE IS ONLY FOR PLAYERS WITH A SPOT IN THE MAIN TOURNAMENT OR THE QUALIFICATION TOURNAMENT!" />
+      <ScheduleItem time="09:00-16:00" title="Course open for practice" description="PRACTICE IS ONLY FOR PLAYERS WITH A SPOT IN THE MAIN TOURNAMENT OR THE QUALIFICATION TOURNAMENT!" />
       <ScheduleItem time="16:30" title="Qualification Tournament" description="The qualification tournament is for registered players for this specific event. No other players are allowed to use the course from 16:30 on Monday!" last />
     </div>
   </div>
@@ -19,8 +19,8 @@
       <p class="font-mono text-sm leading-none text-muted-foreground unstyled">May 7th</p>
     </div>
     <div>
-      <ScheduleItem time="08:00" title="Course open for practice" description="PRACTICE IS ONLY FOR PLAYERS WITH A SPOT IN THE MAIN TOURNAMENT!" />
-      <ScheduleItem time="17:00-18:00" title="Clinic with Paul Ulibarri" description="Privately arranged clinic - register here: https://kjdisc.com/products/clinics-featuring-paul-ulibarri" last />
+      <ScheduleItem time="09:00" title="Course open for practice" description="PRACTICE IS ONLY FOR PLAYERS WITH A SPOT IN THE MAIN TOURNAMENT! Register here for tee-time: https://www.discgolfscene.com/tournaments/Copenhagen_Open_Practice_Tee_Times_Tuesday_2024/register" />
+      <ScheduleItem time="17:00-18:00" title="Clinic with Paul Ulibarri" description="Privately arranged clinic - register <a href='https://kjdisc.com/products/clinics-featuring-paul-ulibarri' target='_blank'>here</a>" last />
     </div>
   </div>
   <div class="space-y-4">
@@ -29,7 +29,7 @@
       <p class="font-mono text-sm leading-none text-muted-foreground unstyled">May 8th</p>
     </div>
     <div>
-      <ScheduleItem time="08:00" title="Course open for practice" description="PRACTICE IS ONLY FOR PLAYERS WITH A SPOT IN THE MAIN TOURNAMENT!" />
+      <ScheduleItem time="09:00" title="Course open for practice" description="PRACTICE IS ONLY FOR PLAYERS WITH A SPOT IN THE MAIN TOURNAMENT! Register here for tee-time: https://www.discgolfscene.com/tournaments/Copenhagen_Open_Practice_Tee_Times_Wednesday_2024/register" />
       <ScheduleItem time="09:00-18:00" title="Course assets are set up" description="Course assets include circle 1 and 2 whiskers, tents and beach flags." last />
     </div>
   </div>
@@ -39,7 +39,7 @@
       <p class="font-mono text-sm leading-none text-muted-foreground unstyled">May 9th</p>
     </div>
     <div>
-      <ScheduleItem time="08:00" title="Course open for practice" description="PRACTICE IS ONLY FOR PLAYERS WITH A SPOT IN THE MAIN TOURNAMENT!" />
+      <ScheduleItem time="09:00" title="Course open for practice" description="PRACTICE IS ONLY FOR PLAYERS WITH A SPOT IN THE MAIN TOURNAMENT! Register here for tee-time: https://www.discgolfscene.com/tournaments/Copenhagen_Open_Practice_Tee_Times_Thursday_2024/register" />
       <ScheduleItem time="09:00-17:00" title="Practice area is set up" description="Includes fencing off some areas." />
       <ScheduleItem time="15:00-17:00" title="Press Conference" last />
     </div>
