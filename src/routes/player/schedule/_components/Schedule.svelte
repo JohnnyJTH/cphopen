@@ -50,7 +50,7 @@
       <p class="font-mono text-sm leading-none text-muted-foreground unstyled">May 10th</p>
     </div>
     <div>
-      <ScheduleItem time="08:30" title="First Tee-Off" />
+      <ScheduleItem time="08:15" title="First Tee-Off - FPO" />
       <ScheduleItem time="10:00" title="FPO feature card tee-off" />
       <ScheduleItem time="16:00" title="Last Tee-Off of the day - MPO feature card" last />
     </div>
@@ -61,7 +61,7 @@
       <p class="font-mono text-sm leading-none text-muted-foreground unstyled">May 11th</p>
     </div>
     <div>
-      <ScheduleItem time="08:30" title="First Tee-Off, second round" />
+      <ScheduleItem time="08:15" title="First Tee-Off, second round - FPO" />
       <ScheduleItem time="10:00" title="FPO lead card tee-off, second round" />
       <ScheduleItem time="16:00" title="Last Tee-Off of the day - MPO lead card, second round" last />
     </div>
@@ -72,7 +72,7 @@
       <p class="font-mono text-sm leading-none text-muted-foreground unstyled">May 12th</p>
     </div>
     <div>
-      <ScheduleItem time="08:30" title="First Tee-Off, final round" />
+      <ScheduleItem time="08:15" title="First Tee-Off, final round - FPO" />
       <ScheduleItem time="09:45" title="FPO chase card tee-off, final round = places 5-8" />
       <ScheduleItem time="10:00" title="FPO lead card tee-off, final round = top 4 FPO players" />
       <ScheduleItem time="15:45" title="MPO chase card tee-off, final round = places 5-8" />
