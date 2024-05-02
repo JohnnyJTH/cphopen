@@ -1,3 +1,3 @@
 <h1>Area Map</h1>
 <p>On the Google Map below, you can see the placement of various tents in the tournament central, spots for parking, placement of toilets - as well as amenities in the neighbourhood of the park. The area map is interactive and you can open it in full screen.</p>
-<iframe src="https://www.google.com/maps/d/embed?mid=1A_yTB7tFt0gkMR7zfW7QCu70UVhZND0&ehbc=2E312F&noprof=1" class="w-full h-full"></iframe>
+<iframe src="https://www.google.com/maps/d/embed?mid=1A_yTB7tFt0gkMR7zfW7QCu70UVhZND0&ehbc=2E312F&noprof=1" class="w-full h-48"></iframe>
