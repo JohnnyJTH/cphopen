@@ -9,5 +9,9 @@
     <a href="/images/teesigns/TeeSignsCopenhagen2024-1.png" target="_blank"><img src="/images/teesigns/TeeSignsCopenhagen2024-1.png" /></a>
     <a href="/images/teesigns/TeeSignsCopenhagen2024-2.png" target="_blank"><img src="/images/teesigns/TeeSignsCopenhagen2024-2.png" /></a>
     <a href="/images/teesigns/TeeSignsCopenhagen2024-3.png" target="_blank"><img src="/images/teesigns/TeeSignsCopenhagen2024-3.png" /></a>
+</div>
+<div class="columns-3">
     <a href="/images/teesigns/TeeSignsCopenhagen2024-4.png" target="_blank"><img src="/images/teesigns/TeeSignsCopenhagen2024-4.png" /></a>
+    <a href="/images/teesigns/TeeSignsCopenhagen2024-5.png" target="_blank"><img src="/images/teesigns/TeeSignsCopenhagen2024-5.png" /></a>
+    <a href="/images/teesigns/TeeSignsCopenhagen2024-6.png" target="_blank"><img src="/images/teesigns/TeeSignsCopenhagen2024-6.png" /></a>
 </div>
