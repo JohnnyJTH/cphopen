@@ -1,2 +1,3 @@
 <h1>Områdekort</h1>
-<p>This page is under construction</p>
+<p>På nedenstående kort findes information om turneringsområdet, herunder teltene ved turneringscentrum - og selve hullerne på banen.</p>
+<iframe src="https://www.google.com/maps/d/embed?mid=1A_yTB7tFt0gkMR7zfW7QCu70UVhZND0&ehbc=2E312F&noprof=1"></iframe>
