@@ -4,6 +4,11 @@
 
   const NEWS = [
     {
+      title: '5/5: Hole maps',
+      description: `Each hole can be seen on the course page (click an image to enlarge)`,
+      link: 'https://cphopen.dk/player/course'
+    },
+    {
       title: '11/3: Qualify for the Copenhagen Open!',
       description: `Registration is open for the Copenhagen Open 2024 Qualification Tournament.
         Register now to get a chance to win a spot in the tournament.`,
