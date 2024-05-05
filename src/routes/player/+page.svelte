@@ -6,7 +6,7 @@
     {
       title: '5/5: Hole maps',
       description: `Each hole can be seen on the course page (click an image to enlarge)`,
-      link: 'https://cphopen.dk/player/course'
+      link: '/player/course'
     },
     {
       title: '11/3: Qualify for the Copenhagen Open!',
