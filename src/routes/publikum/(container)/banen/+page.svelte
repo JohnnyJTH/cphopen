@@ -1,6 +1,6 @@
 <h1>Banen</h1>
 <p>
-    Banen er en varieret og udfordrende baner med både lange, åbne og smalle huller; herunder et par huller med hævet kurv. Par på banen er 64 for MPO-spillere (herrer) og 66 for FPO-spillere (kvinder). Længden err hhv. 2667 meter og 2466 meter.<br /><br />
+    Banen er en varieret og udfordrende baner med både lange, åbne og smalle huller; herunder et par huller med hævet kurv. Par på banen er 64 for MPO-spillere (herrer) og 66 for FPO-spillere (kvinder). Længden er hhv. 2667 meter og 2466 meter.<br /><br />
     Herunder kan hvert hul ses enkeltvis (klik på billedet for større version).
 </p>
 <div class="columns-3">
