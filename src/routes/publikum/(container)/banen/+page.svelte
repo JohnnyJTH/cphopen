@@ -1,8 +1,9 @@
 <h1>Banen</h1>
 <p>
     Banen er en varieret og udfordrende baner med både lange, åbne og smalle huller; herunder et par huller med hævet kurv. Par på banen er 64 for MPO-spillere (herrer) og 66 for FPO-spillere (kvinder). Længden er hhv. 2667 meter og 2466 meter.<br /><br />
-    Herunder kan hvert hul ses enkeltvis (klik på billedet for større version).
+    Herunder kan hele banekortet ses og hvert hul kan studeres nærmere et for et (klik på billeder for større version).
 </p>
+<p><a href="/images/CO24-Course-Map-v3.png" target="_blank"><img src="/images/CO24-Course-Map-v3.png" /></a></p>
 <div class="columns-3">
     <a href="/images/teesigns/TeeSignsCopenhagen2024-1.png" target="_blank"><img src="/images/teesigns/TeeSignsCopenhagen2024-1.png" /></a>
     <a href="/images/teesigns/TeeSignsCopenhagen2024-2.png" target="_blank"><img src="/images/teesigns/TeeSignsCopenhagen2024-2.png" /></a>
