@@ -1,2 +1,2 @@
 <h1>Groups</h1>
-<p>This page is under construction.</p>
+<p>Groups for round 1 can be found on PDGA Live - MPO <a href="https://www.pdga.com/apps/tournament/live/event?eventId=78193&view=Scores&division=MPO&round=1" target="_blank">here</a>, FPO <a href="https://www.pdga.com/apps/tournament/live/event?eventId=78193&view=Scores&division=FPO&round=1" target="_blank">here</a>.</p>
