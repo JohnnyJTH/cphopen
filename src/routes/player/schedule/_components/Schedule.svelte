@@ -40,8 +40,7 @@
     </div>
     <div>
       <ScheduleItem time="09:00" title="Course open for practice" description="PRACTICE ONLY FOR MAIN TOURNAMENT PLAYERS! <a href='https://tinyurl.com/co24-pr-th' target='_blank'>Register for a tee-time here</a>" />
-      <ScheduleItem time="09:00-17:00" title="Practice area is set up" description="Includes fencing off some areas." />
-      <ScheduleItem time="15:00-17:00" title="Press Conference" last />
+      <ScheduleItem time="09:00-17:00" title="Practice area is set up" description="Includes fencing off some areas." last />
     </div>
   </div>
   <div class="space-y-4">
