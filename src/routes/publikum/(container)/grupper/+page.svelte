@@ -1,2 +1,2 @@
 <h1>Grupper</h1>
-<p>For at følge med i anden runde, kan teetiderne ses <a href="https://www.pdga.com/apps/tournament/live/event?eventId=78193&view=Scores&round=2" target="_blank">her</a> (vælg MPO eller FPO for at for den givne række).</p>
+<p>For at følge med i anden runde, kan teetiderne ses <a href="https://www.pdga.com/apps/tournament/live/event?eventId=78193&view=Scores&round=3" target="_blank">her</a> (vælg MPO eller FPO for at for den givne række).</p>
