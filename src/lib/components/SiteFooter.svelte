@@ -7,7 +7,7 @@
 
   let year = new Date().getFullYear();
 
-  $: isHomePage = $page.url.pathname === '/';
+  $: isHomePage = false; // $page.url.pathname === '/';
   let windowWidth: number;
   $: isMobile = windowWidth < 1024;
 
