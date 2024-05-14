@@ -2,60 +2,78 @@
   import { Button } from '$lib/components/ui/button';
   import * as Table from '$lib/components/ui/table';
   import { ALL_RESULTS } from '$lib/results';
-  import { onMount } from 'svelte';
 
-  $: results = ALL_RESULTS.mpo;
+  let division = 'MPO';
+  $: results = division === 'MPO' ? ALL_RESULTS.mpo : ALL_RESULTS.fpo;
 
   let resultsEl: HTMLElement;
 </script>
 
-<div class="relative px-6 space-y-16 isolate pt-14 lg:px-8">
-  <div
-    class="absolute inset-x-0 overflow-hidden -top-40 -z-10 transform-gpu blur-3xl sm:-top-80"
-    aria-hidden="true"
-  >
+<div class="space-y-16 page-container">
+  <div class="relative space-y-16 isolate pt-14">
     <div
-      class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-primary to-background sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
-      style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"
-    ></div>
-  </div>
-  <div class="!mt-0 flex flex-col items-center">
-    <h1 class="text-4xl font-extrabold tracking-tight unstyled sm:text-6xl">
-      Copenhagen Open 2024
-    </h1>
-    <p class="!mt-2 text-lg leading-8">The biggest Disc Golf tournament to date in Denmark!</p>
-    <div class="flex gap-2 mt-2">
-      <Button on:click={() => resultsEl.scrollIntoView({ behavior: 'smooth' })}>See results</Button>
-      <Button href="/publikum" variant="outline">Tilskuer info</Button>
-      <Button href="/player" variant="outline">Player info</Button>
+      class="absolute inset-x-0 overflow-hidden -top-16 -z-10 transform-gpu blur-3xl"
+      aria-hidden="true"
+    >
+      <div
+        class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-primary to-background sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
+        style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"
+      ></div>
+    </div>
+    <div class="!mt-0 flex flex-col items-center">
+      <h1 class="text-4xl font-extrabold tracking-tight text-center unstyled lg:text-6xl">
+        Copenhagen Open 2024
+      </h1>
+      <p class="!mt-2 text-center text-lg leading-8">
+        The biggest Disc Golf tournament to date in Denmark!
+      </p>
+      <div class="flex gap-2 mt-2">
+        <Button on:click={() => resultsEl.scrollIntoView({ behavior: 'smooth' })}
+          >See results</Button
+        >
+        <Button href="/publikum" variant="outline">Tilskuer info</Button>
+        <Button href="/player" variant="outline">Player info</Button>
+      </div>
+      <img
+        src="images/winners.png"
+        alt="Winners of the Copenhagen Open 2024"
+        class="mt-16 rounded"
+      />
+    </div>
+    <div
+      class="absolute inset-x-0 overflow-hidden -z-10 transform-gpu blur-3xl sm:top-1/2"
+      aria-hidden="true"
+    >
+      <div
+        class="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-primary to-background sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]"
+        style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"
+      ></div>
     </div>
   </div>
-  <div
-    class="absolute inset-x-0 overflow-hidden -z-10 transform-gpu blur-3xl sm:top-1/2"
-    aria-hidden="true"
-  >
-    <div
-      class="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-primary to-background sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]"
-      style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"
-    ></div>
-  </div>
-
-  <img src="images/winners.png" alt="Winners of the Copenhagen Open 2024" class="rounded" />
 
   <section bind:this={resultsEl}>
     <div class="flex justify-between">
       <div class="flex gap-4">
         <h2 class="border-none">Results</h2>
-        <div class="gap-2">
-          <Button variant="outline">MPO</Button>
-          <Button variant="ghost">FPO</Button>
+        <div class="flex gap-2">
+          <Button
+            on:click={() => (division = 'MPO')}
+            variant={division === 'MPO' ? 'outline' : 'ghost'}
+            class="z-10">MPO</Button
+          >
+          <Button
+            on:click={() => (division = 'FPO')}
+            variant={division === 'FPO' ? 'outline' : 'ghost'}
+            class="z-10">FPO</Button
+          >
         </div>
       </div>
       <Button
         href="https://www.dgpt.com/event-scores/?id=78193&division=MPO&season=2024&round=3&round_id=122292629"
         target="_blank"
+        class="z-10"
       >
-        Full scores
+        Full standings
       </Button>
     </div>
     <div>
