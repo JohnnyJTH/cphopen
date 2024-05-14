@@ -19,11 +19,11 @@
       style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"
     ></div>
   </div>
-  <div class="flex flex-col items-center !mt-0">
+  <div class="!mt-0 flex flex-col items-center">
     <h1 class="text-4xl font-extrabold tracking-tight unstyled sm:text-6xl">
       Copenhagen Open 2024
     </h1>
-    <p class="text-lg leading-8">The biggest disc golf tournament to date in Denmark!</p>
+    <p class="!mt-2 text-lg leading-8">The biggest Disc Golf tournament to date in Denmark!</p>
     <div class="flex gap-2 mt-2">
       <Button on:click={() => resultsEl.scrollIntoView({ behavior: 'smooth' })}>See results</Button>
       <Button href="/publikum" variant="outline">Tilskuer info</Button>
@@ -114,7 +114,14 @@
           {#each results as result}
             <Table.Row>
               <Table.Cell>{result.place}</Table.Cell>
-              <Table.Cell>{result.name}</Table.Cell>
+              <Table.Cell class="flex items-center gap-1">
+                <img
+                  src={`https://flagcdn.com/${result.origin.country.toLowerCase()}.svg`}
+                  alt={result.origin.full}
+                  class="h-3"
+                />
+                {result.name}
+              </Table.Cell>
               <Table.Cell>{result.score.total}</Table.Cell>
               <Table.Cell class="hidden sm:table-cell">{result.score.r1}</Table.Cell>
               <Table.Cell class="hidden sm:table-cell">{result.score.r2}</Table.Cell>
