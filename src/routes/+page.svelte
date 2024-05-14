@@ -1,9 +1,12 @@
-<script>
+<script lang="ts">
   import { Button } from '$lib/components/ui/button';
   import * as Table from '$lib/components/ui/table';
   import { ALL_RESULTS } from '$lib/results';
+  import { onMount } from 'svelte';
 
   $: results = ALL_RESULTS.mpo;
+
+  let resultsEl: HTMLElement;
 </script>
 
 <div class="relative px-6 space-y-16 isolate pt-14 lg:px-8">
@@ -16,12 +19,15 @@
       style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"
     ></div>
   </div>
-  <div class="max-w-2xl mx-auto">
-    <div class="text-center">
-      <h1 class="text-4xl font-extrabold tracking-tight unstyled sm:text-6xl">
-        Copenhagen Open 2024
-      </h1>
-      <p class="mt-3 text-lg leading-8">The biggest disc golf tournament to date in Denmark!</p>
+  <div class="flex flex-col items-center !mt-0">
+    <h1 class="text-4xl font-extrabold tracking-tight unstyled sm:text-6xl">
+      Copenhagen Open 2024
+    </h1>
+    <p class="text-lg leading-8">The biggest disc golf tournament to date in Denmark!</p>
+    <div class="flex gap-2 mt-2">
+      <Button on:click={() => resultsEl.scrollIntoView({ behavior: 'smooth' })}>See results</Button>
+      <Button href="/publikum" variant="outline">Tilskuer info</Button>
+      <Button href="/player" variant="outline">Player info</Button>
     </div>
   </div>
   <div
@@ -36,7 +42,7 @@
 
   <img src="images/winners.png" alt="Winners of the Copenhagen Open 2024" class="rounded" />
 
-  <section>
+  <section bind:this={resultsEl}>
     <div class="flex justify-between">
       <div class="flex gap-4">
         <h2 class="border-none">Results</h2>
@@ -57,7 +63,9 @@
       <hr class="border border-white" />
       <div class="flex items-center w-full py-4">
         <div class="flex flex-[2_1_0%] items-center gap-6">
-          <div class="flex items-center justify-center rounded-full size-16 md:size-24 shrink-0 grow-0">
+          <div
+            class="flex items-center justify-center rounded-full size-16 shrink-0 grow-0 md:size-24"
+          >
             <img
               src={results[0].image}
               alt={results[0].name}
@@ -65,7 +73,7 @@
             />
           </div>
           <div class="flex flex-col justify-center">
-            <h3 class="text-2xl font-semibold md:text-3xl unstyled">{results[0].name}</h3>
+            <h3 class="text-2xl font-semibold unstyled md:text-3xl">{results[0].name}</h3>
             <div class="flex items-center gap-1">
               <img
                 src={`https://flagcdn.com/${results[0].origin.country.toLowerCase()}.svg`}
@@ -96,9 +104,9 @@
             <Table.Head>Pos</Table.Head>
             <Table.Head>Name</Table.Head>
             <Table.Head class="w-10">Total</Table.Head>
-            <Table.Head class="w-[2.5rem] hidden sm:table-cell">R1</Table.Head>
-            <Table.Head class="w-[2.5rem] hidden sm:table-cell">R2</Table.Head>
-            <Table.Head class="w-[2.5rem] hidden sm:table-cell">R3</Table.Head>
+            <Table.Head class="hidden w-[2.5rem] sm:table-cell">R1</Table.Head>
+            <Table.Head class="hidden w-[2.5rem] sm:table-cell">R2</Table.Head>
+            <Table.Head class="hidden w-[2.5rem] sm:table-cell">R3</Table.Head>
             <Table.Head class="text-right">Earnings</Table.Head>
           </Table.Row>
         </Table.Header>
